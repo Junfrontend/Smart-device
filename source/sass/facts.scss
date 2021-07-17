@@ -1,0 +1,183 @@
+@media (min-width: 1024px) {
+  .facts {
+    margin: 0 auto;
+    margin-top: 390px;
+    margin-bottom: 152px;
+  }
+
+  .facts h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: #1f1f1f;
+    text-align: center;
+    letter-spacing: -0.8px;
+    margin: 0;
+  }
+
+  .facts__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    counter-reset: myCounter;
+    margin: 50px 145px 0 143px;
+    padding: 0;
+  }
+
+  .facts__list li {
+    font-family: $font;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.5px;
+    width: 250px;
+
+    &::before {
+      counter-increment: myCounter;
+      content: "0"counter(myCounter);
+      color: $turquoise;
+      display: block;
+      width: 30px;
+      text-align: center;
+      font-family: $font;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1320px) {
+    .facts__list {
+      margin: 50px 45px 0 43px;
+
+      li {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .facts {
+    margin-top: 70px;
+    margin-left: 106px;
+    margin-right: 106px;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .facts h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+    color: #1f1f1f;
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
+
+  .facts__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    justify-content: center;
+    counter-reset: myCounter;
+    margin: 0;
+
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .facts__list li {
+    font-family: $font;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 263px;
+    letter-spacing: -0.5px;
+
+    &::before {
+      counter-increment: myCounter;
+      content: "0"counter(myCounter);
+      color: $turquoise;
+      display: inline-block;
+      text-align: center;
+      font-family: $font;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .facts {
+    margin-top: 72px;
+    margin-bottom: 35px;
+  }
+
+  .facts h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+    color: #1f1f1f;
+    text-align: center;
+    letter-spacing: -0.69px;
+    margin: 0;
+  }
+
+  .facts__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    counter-reset: myCounter;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .facts__list li {
+    font-family: $font;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    letter-spacing: -0.5px;
+    width: 288px;
+
+    &::before {
+      counter-increment: myCounter;
+      content: "0"counter(myCounter);
+      color: $turquoise;
+      display: inline-block;
+      text-align: center;
+      font-family: $font;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 18px;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 147px;
+  }
+
+  .footer--bottom {
+    position: absolute;
+    left: calc((100% - 957px) / 2);
+    bottom: 0;
+  }
+
+  .footer h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: #1f1f1f;
+    text-align: center;
+    margin: 0;
+    letter-spacing: -0.8px;
+  }
+
+  .footer p {
+    font-family: $font;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    margin: 0 auto;
+    width: 555px;
+    margin-top: 30px;
+  }
+
+  .footer__map iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 42px;
+    width: 957px;
+    height: 530px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+  }
+
+  .footer--bottom {
+    position: absolute;
+    left: calc((100% - 698px) / 2);
+    bottom: 0;
+  }
+
+  .footer h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f1f1f;
+    text-align: center;
+    margin: 0;
+    letter-spacing: -0.7px;
+  }
+
+  .footer p {
+    font-family: $font;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .footer__map iframe {
+    display: block;
+    margin: 0 auto;
+    width: 698px;
+    height: 545px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 67px;
+  }
+
+  .footer--bottom {
+    position: absolute;
+    left: calc((100% - 320px) / 2);
+    bottom: 0;
+  }
+
+  .footer h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #1f1f1f;
+    text-align: center;
+    margin: 0;
+    letter-spacing: -0.65px;
+  }
+
+  .footer p {
+    font-family: $font;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 260px;
+  }
+
+  .footer__map iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: 19px;
+  }
+}

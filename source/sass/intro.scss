@@ -1,0 +1,356 @@
+@media (min-width: 1024px) {
+  .intro {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: url("../img/main-background-desktop@1x.png");
+      height: 878px;
+      width: 100%;
+    }
+
+    h1 {
+      font-family: $roboto-bold;
+      font-size: 80px;
+      line-height: 94px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0;
+      margin-left: 13%;
+    }
+
+    p {
+      font-family: $PT-Mono;
+      font-size: 22px;
+      line-height: 34.2px;
+      color: #ffffff;
+      margin: 0;
+      width: 650px;
+      position: relative;
+      top: 26px;
+      left: 348px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 66px;
+        height: 2px;
+        background: #ffffff;
+        position: absolute;
+        left: -95px;
+        top: 16px;
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      width: 407px;
+      height: 55px;
+      color: #ffffff;
+      background-color: $main-blue;
+      font-family: $roboto-bold;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding-top: 17px;
+      box-sizing: border-box;
+      margin-top: 70px;
+      margin-left: 18%;
+    }
+
+    height: 760px;
+    padding-top: 198px;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url("../img/intro-background-desktop@1x.png") no-repeat 1038px 140px,
+    url("../img/triangle-with-dots-background.svg") no-repeat 1102px 154px,
+    url("../img/small-triangle-with-dots-background.svg") no-repeat 1051px 352px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: url("../img/main-background-desktop@2x.png");
+        height: 878px;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) and (max-width: 1760px) {
+    .intro {
+      h1 {
+        margin-left: 8%;
+      }
+
+      p {
+        left: 248px;
+      }
+
+      a {
+        margin-left: 8%;
+      }
+
+      background: url("../img/intro-background-desktop@1x.png") no-repeat 908px 140px,
+      url("../img/triangle-with-dots-background.svg") no-repeat 872px 154px,
+      url("../img/small-triangle-with-dots-background.svg") no-repeat 931px 352px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    .intro {
+      h1 {
+        margin-left: 3%;
+        width: 470px;
+      }
+
+      p {
+        left: 148px;
+        width: 356px;
+      }
+
+      a {
+        margin-left: 3%;
+      }
+
+      background: url("../img/intro-background-desktop@1x.png") no-repeat 728px 140px,
+      url("../img/triangle-with-dots-background.svg") no-repeat 692px 154px,
+      url("../img/small-triangle-with-dots-background.svg") no-repeat 751px 352px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .intro {
+      h1 {
+        margin-left: 3%;
+        width: 470px;
+      }
+
+      p {
+        left: 148px;
+        width: 356px;
+      }
+
+      a {
+        margin-left: 3%;
+      }
+
+      background: url("../img/intro-background-desktop@1x.png") no-repeat 628px 140px,
+      url("../img/triangle-with-dots-background.svg") no-repeat 592px 154px,
+      url("../img/small-triangle-with-dots-background.svg") no-repeat 651px 352px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .intro {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      background: url("../img/main-background-desktop@1x.png");
+      background-position: bottom;
+      height: 685px;
+      width: 100%;
+    }
+
+    h1 {
+      font-family: $roboto-bold;
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0;
+      margin-left: 88px;
+      width: 470px;
+    }
+
+    p {
+      font-family: $PT-Mono;
+      font-size: 18px;
+      line-height: 28px;
+      color: #ffffff;
+      margin: 0;
+      width: 356px;
+      position: relative;
+      top: 29px;
+      left: 139px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 2px;
+        background: #ffffff;
+        position: absolute;
+        left: -48px;
+        top: 16px;
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      width: 379px;
+      height: 55px;
+      color: #ffffff;
+      background-color: $main-blue;
+      font-family: $roboto-bold;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding-top: 17px;
+      box-sizing: border-box;
+      margin-top: 85px;
+      margin-left: 18%;
+      border-radius: 5px;
+    }
+
+    height: 560px;
+    padding-top: 116px;
+    box-sizing: border-box;
+    background: url("../img/intro-background-desktop@1x.png") no-repeat 510px 18.4% / 465px 340px,
+    url("../img/triangle-with-dots-background.svg") no-repeat 497px -15% / 440px 440px,
+    url("../img/small-triangle-with-dots-background.svg") no-repeat 457px 50% / 261px 261px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background: url("../img/intro-background-desktop@2x.png") no-repeat 510px 3.4% / 465px 340px,
+        url("../img/triangle-with-dots-background.svg") no-repeat 497px 32.4%,
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 457px 52.7%;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        background: url("../img/main-background-desktop@2x.png");
+        height: 685px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .intro {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      background: url("../img/main-background-desktop@1x.png");
+      background-position: bottom;
+      height: 647px;
+      width: 100%;
+    }
+
+    h1 {
+      font-family: $roboto-bold;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0;
+      margin-left: 15px;
+      width: 277px;
+    }
+
+    p {
+      font-family: $PT-Mono;
+      font-size: 16px;
+      line-height: 25px;
+      color: #ffffff;
+      margin: 0;
+      width: 245px;
+      position: relative;
+      top: 27px;
+      left: 66px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 2px;
+        background: #ffffff;
+        position: absolute;
+        left: -48px;
+        top: 15px;
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      width: 287px;
+      height: 55px;
+      color: #ffffff;
+      background-color: $main-blue;
+      font-family: $roboto-bold;
+      font-size: 0;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding-top: 17px;
+      box-sizing: border-box;
+      margin: 67px 15px 0 18px;
+      border-radius: 5px;
+
+      &::after {
+        content: "бесплатная консультация";
+        line-height: 19px;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    height: 560px;
+    padding-top: 231px;
+    box-sizing: border-box;
+    background: url("../img/intro-background-desktop@1x.png") no-repeat 26px 37px / 301px 220px,
+    url("../img/small-triangle-with-dots-background.svg") no-repeat 206px -3px / 261px 261px,
+    url("../img/small-triangle-with-dots-background.svg") no-repeat 168px 148px / 250px 250px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background: url("../img/intro-background-desktop@2x.png") no-repeat 26px 37px / 301px 220px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        background: url("../img/main-background-desktop@2x.png");
+        height: 647px;
+        width: 100%;
+      }
+    }
+  }
+}

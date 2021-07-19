@@ -8,20 +8,20 @@ body {
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto.woff2) format('woff2'),
-      url(../fonts/Roboto.woff) format('woff');
+  src: url("../fonts/Roboto.woff2") format("woff2"),
+    url("../fonts/Roboto.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto-Bold";
-  src: url(../fonts/Roboto-Bold.woff2) format('woff2'),
-      url(../fonts/Roboto-Bold.woff) format('woff');
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "PT-Mono";
-  src: url(../fonts/PT-Mono.woff2) format('woff2'),
-      url(../fonts/PT-Mono.woff) format('woff');
+  src: url("../fonts/PT-Mono.woff2") format("woff2"),
+    url("../fonts/PT-Mono.woff") format("woff");
 }
 
 $roboto: "Roboto", "Arial", sans-serif;
@@ -29,3 +29,6 @@ $roboto: "Roboto", "Arial", sans-serif;
 $roboto-bold: "Roboto-Bold", "Arial", sans-serif;
 
 $PT-Mono: "PT-Mono", "Arial", sans-serif;
+
+
+$main-blue: #00b2ff;

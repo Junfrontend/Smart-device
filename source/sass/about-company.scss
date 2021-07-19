@@ -1,0 +1,44 @@
+@media (min-width: 1024px) {
+  .about-company {
+    h2 {
+      font-family: $roboto;
+      font-size: 36px;
+      line-height: 51px;
+      color: #666666;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-family: $PT-Mono;
+      font-size: 16px;
+      line-height: 22px;
+      color: #666666;
+    }
+
+    button {
+      width: 180px;
+      height: 45px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      border: 1px solid $main-blue;
+      color: $main-blue;
+      border-radius: 5px;
+      font-family: $roboto-bold;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 220px;
+      height: 317px;
+      transform: rotate(90);
+      background: url("../img/about-company-2005@1x.png") no-repeat;
+    }
+  }
+}

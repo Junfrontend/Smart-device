@@ -4,8 +4,11 @@
     position: relative;
     margin-left: 555px;
     margin-bottom: 110px;
+    margin-top: 73px;
+
     h2 {
       font-family: $roboto;
+      font-weight: normal;
       font-size: 36px;
       line-height: 51px;
       color: #666666;
@@ -14,7 +17,7 @@
 
     p {
       margin: 0;
-      margin-top: 18px;
+      margin-top: 21px;
       font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
@@ -22,7 +25,7 @@
     }
 
     button {
-      margin-top: 30px;
+      margin-top: 38px;
       width: 180px;
       height: 45px;
       box-sizing: border-box;
@@ -42,7 +45,8 @@
       content: "";
       display: block;
       position: absolute;
-      left: -250px;
+      left: -210px;
+      top: 5px;
       width: 220px;
       height: 317px;
       transform: rotate(90);
@@ -63,6 +67,7 @@
     width: 532px;
     position: relative;
     margin-left: 213px;
+
     h2 {
       font-family: $roboto;
       font-size: 36px;

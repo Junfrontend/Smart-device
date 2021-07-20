@@ -5,13 +5,43 @@
     flex-wrap: wrap;
     background-color: #1b2d37;
     padding: 0 375px;
+    padding-bottom: 127px;
 
     h2 {
       width: 100%;
       color: #ffffff;
       font-family: $roboto;
+      font-weight: normal;
       font-size: 36px;
       line-height: 51px;
+      margin-top: 89px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .offer__item {
+    padding: 52px 160px 0 44px;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 63px;
+      height: 63px;
+      z-index: 5;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: url("../img/icon-arrow.svg") no-repeat center,
+        $main-blue;
+    }
+
+    &:hover {
+      &::after {
+        width: 163px;
+      }
     }
   }
 

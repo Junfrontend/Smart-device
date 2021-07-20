@@ -46,7 +46,7 @@
       }
     }
 
-    a {
+    a[href="#form"] {
       display: block;
       text-decoration: none;
       width: 407px;
@@ -73,6 +73,28 @@
     background: url("../img/intro-background-desktop@1x.png") no-repeat 1038px 140px,
     url("../img/triangle-with-dots-background.svg") no-repeat 1102px 154px,
     url("../img/small-triangle-with-dots-background.svg") no-repeat 1051px 352px;
+  }
+
+  .intro__scroll-down {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 215px;
+    top: 734px;
+
+    a {
+      text-decoration: none;
+      font-family: $PT-Mono;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      opacity: 0.5;
+      border: none;
+      width: auto;
+      height: auto;
+      background: none;
+      text-transform: none;
+      letter-spacing: -0.1px;
+    }
   }
 
   @media (min-resolution: 2dppx) {

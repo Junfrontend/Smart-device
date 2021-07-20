@@ -1,0 +1,14 @@
+@media (min-width: 1024px) {
+  .main-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-info__logo-and-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 220px;
+  }
+}

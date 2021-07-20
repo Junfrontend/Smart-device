@@ -1,0 +1,104 @@
+@media (min-width: 1024px) {
+  .form {
+    padding-top: 96px;
+    padding-bottom: 113px;
+    background: url("../img/paper-plane@1x.png") no-repeat 350px 161px,
+    url("../img/triangle-with-dots-background.svg") no-repeat 251px 99px,
+    url("../img/small-triangle-with-dots-background.svg") no-repeat 200px 297px / 320px 279px,
+    $main-blue;
+    fieldset {
+      border: none;
+      width: 570px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      justify-content: space-between;
+      position: relative;
+      left: 50%;
+    }
+
+    legend {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-family: $roboto;
+      font-size: 36px;
+      line-height: 51px;
+    }
+
+    span {
+      font-family: $PT-Mono;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+      margin-top: 15px;
+    }
+
+    input {
+      display: block;
+      width: 270px;
+      height: 50px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      font-family: $PT-Mono;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+      margin-top: 50px;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+
+    textarea {
+      display: block;
+      width: 570px;
+      height: 154px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      font-family: $PT-Mono;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+      resize: none;
+      margin-top: 40px;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+
+    button {
+      width: 270px;
+      height: 45px;
+      border: 1px solid #ffffff;
+      background: none;
+      font-family: $roboto-bold;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #ffffff;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 5px;
+      margin-top: 43px;
+    }
+
+    label {
+      font-family: $PT-Mono;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      opacity: 0.8;
+    }
+
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

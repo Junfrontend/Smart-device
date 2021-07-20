@@ -1,0 +1,60 @@
+@media (min-width: 1024px) {
+  .offer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #1b2d37;
+    padding: 0 375px;
+
+    h2 {
+      width: 100%;
+      color: #ffffff;
+      font-family: $roboto;
+      font-size: 36px;
+      line-height: 51px;
+    }
+  }
+
+  .offer__item--produce {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    width: 370px;
+    height: 620px;
+    background: url("../img/produce-boards-desktop@1x.png");
+    font-family: $roboto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .offer__item--installation {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    width: 370px;
+    height: 620px;
+    background: url("../img/installation-boards-desktop@1x.png");
+    font-family: $roboto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .offer__item--light {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    width: 370px;
+    height: 620px;
+    background: url("../img/lighting-engineering-desktop@1x.png");
+    font-family: $roboto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .offer__item {
+      width: 280px;
+      margin: 0 27px;
+    }
+  }
+}

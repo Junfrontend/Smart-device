@@ -239,7 +239,7 @@
         </svg>
         <h2>Оперативные сроки</h2>
         <p>
-          Усовершенствованная логистическая система позволяет нам <br>просчитывать стоимость,
+          Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
           производить и доставлять заказы плат и комплектующих в самые короткие сроки
         </p>
       </div>
@@ -280,13 +280,18 @@
         года.
         Выполняем срочные заказы и пилотные образцы до 10 дней.
       </p>
-      <p>
-        Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-        Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-        РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-        Среди наших клиентов крупнейшие Производители светотехники России.
-      </p>
-      <button type="button">Подробнее</button>
+      <div class="about-company__second-part-description">
+        <p>
+          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+          Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+          <span>
+            (РЖД),
+            РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+            Среди наших клиентов крупнейшие Производители светотехники России.
+          </span>
+        </p>
+      </div>
+      <button class="about-company__button" type="button">Подробнее</button>
     </section>
     <section class="offer">
       <h2>Service Device предлагает следующие товары и услуги</h2>
@@ -327,20 +332,25 @@
   <footer class="footer">
     <div class="footer__main-info main-info">
       <div class="main-info__logo-and-social">
-        <svg class="main-info__logo-big" height="52" width="202" alt="Логотип компании">
-          <use xlink:href="#logo-big-dark"></use>
+        <svg class="main-info__logo" height="52" width="52" alt="Логотип компании">
+          <use xlink:href="#logo-small"></use>
         </svg>
-        <svg width="29" height="29">
-          <use xlink:href="#icon-facebook"></use>
-        </svg>
-        <svg width="29" height="29">
-          <use xlink:href="#icon-classmates"></use>
-        </svg>
-        <svg width="29" height="29">
-          <use xlink:href="#icon-vk"></use>
-        </svg>
+        <h2>Service Device</h2>
+        <div class="main-info__company-info"><span>1999-2018 SD Service Devices</span></div>
+        <div class="main-info__social-icons">
+          <svg width="29" height="29">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
+          <svg width="29" height="29">
+            <use xlink:href="#icon-classmates"></use>
+          </svg>
+          <svg width="29" height="29">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+        </div>
       </div>
       <nav class="main-info__nav">
+        <h3>Разделы сайта</h3>
         <ul>
           <li><a href="#">О компании</a></li>
           <li><a href="#">Продукты</a></li>
@@ -366,8 +376,10 @@
       </div>
     </div>
     <div class="footer__bottom-bar">
-      <span>Все права защищены</span>
-      <span>1999-2018 SD Service Devices</span>
+      <div>
+        <span>Все права защищены</span>
+        <span>1999-2018 SD Service Devices</span>
+      </div>
       <span>Условия конфиденциальности</span>
       <span>Developed by wow studio</span>
     </div>

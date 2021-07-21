@@ -255,6 +255,10 @@
     url("../img/small-triangle-with-dots-background.svg") no-repeat 457px 50% / 261px 261px;
   }
 
+  .intro__scroll-down {
+    display: none;
+  }
+
   @media (min-resolution: 2dppx) {
     .intro {
       background: url("../img/intro-background-desktop@2x.png") no-repeat 510px 3.4% / 465px 340px,
@@ -357,6 +361,10 @@
     background: url("../img/intro-background-desktop@1x.png") no-repeat 26px 37px / 301px 220px,
     url("../img/small-triangle-with-dots-background.svg") no-repeat 206px -3px / 261px 261px,
     url("../img/small-triangle-with-dots-background.svg") no-repeat 168px 148px / 250px 250px;
+  }
+
+  .intro__scroll-down {
+    display: none;
   }
 
   @media (min-resolution: 2dppx) {

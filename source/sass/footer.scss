@@ -2,6 +2,60 @@
   .footer {
     display: flex;
     flex-direction: column;
-    padding: 65px 255px 0px 255px;
+  }
+
+  .footer__bottom-bar {
+    width: 100%;
+    border-top: 1px solid rgba(98, 105, 98, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 0 255px 0px 252px;
+
+    span {
+      font-family: $PT-Mono;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #1b2d37;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__bottom-bar {
+    width: 100%;
+    border-top: 1px solid rgba(98, 105, 98, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 19px 24px 0px 27px;
+
+    span {
+      font-family: $PT-Mono;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #1b2d37;
+      opacity: 0.5;
+    }
+
+    div {
+      display: none;
+    }
   }
 }

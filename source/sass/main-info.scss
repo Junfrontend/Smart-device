@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 65px 255px 55px 252px;
   }
 
   .main-info__logo-and-social {
@@ -10,5 +11,243 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 220px;
+
+    h2 {
+      font-family: $roboto-bold;
+      font-size: 25px;
+      line-height: 29px;
+      color: #203c42;
+      margin: 0;
+      margin-left: 16px;
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+
+      &::after {
+        content: "умные технологии";
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.3px;
+        color: #788891;
+      }
+    }
+  }
+
+  .main-info__social-icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    svg {
+      margin-right: 14px;
+    }
+  }
+
+  .main-info__nav {
+    margin-right: 150px;
+
+    h3 {
+      font-family: $roboto;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 16px;
+      color: #1b2d37;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    a {
+      font-family: $PT-Mono;
+      font-size: 15px;
+      line-height: 25px;
+      color: #1b2d37;
+      opacity: 0.5;
+      text-decoration: none;
+      margin-right: 65px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 100px;
+    }
+  }
+
+  .main-info__contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    h3 {
+      font-family: $roboto;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 16px;
+      color: #1b2d37;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 28px;
+    }
+
+    a {
+      font-family: $PT-Mono;
+      font-size: 15px;
+      line-height: 25px;
+      color: #1b2d37;
+      opacity: 0.5;
+      text-decoration: none;
+    }
+  }
+
+  .main-info__company-info {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 19px 23px 35px 25px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: rgba(98, 105, 98, 0.2);
+      top: 97px;
+      left: 0;
+    }
+  }
+
+  .main-info__logo-and-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 65px;
+
+    h2 {
+      font-family: $roboto-bold;
+      font-size: 25px;
+      line-height: 29px;
+      color: #203c42;
+      margin: 0;
+      margin-left: 16px;
+      margin-top: 8px;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+
+      &::after {
+        content: "умные технологии";
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.8px;
+        color: #788891;
+      }
+    }
+  }
+
+  .main-info__social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    svg {
+      margin-left: 12px;
+    }
+  }
+
+  .main-info__nav {
+
+    h3 {
+      font-family: $roboto;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 16px;
+      color: #1b2d37;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0;
+      margin-left: 3px
+    }
+
+    a {
+      font-family: $PT-Mono;
+      font-size: 15px;
+      line-height: 25px;
+      color: #1b2d37;
+      opacity: 0.5;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+
+  .main-info__contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 11px;
+
+    h3 {
+      font-family: $roboto;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 16px;
+      color: #1b2d37;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 24px;
+    }
+
+    a {
+      font-family: $PT-Mono;
+      font-size: 15px;
+      line-height: 25px;
+      color: #1b2d37;
+      opacity: 0.5;
+      text-decoration: none;
+    }
+  }
+
+  .main-info__company-info {
+    display: block;
+    margin-right: 60px;
+    margin-top: 17px;
+
+    span {
+      font-family: $PT-Mono;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #1b2d37;
+      opacity: 0.5;
+    }
   }
 }

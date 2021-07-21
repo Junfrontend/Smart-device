@@ -149,6 +149,7 @@
   }
 
   .features__item--time {
+    padding-right: 15px;
     svg {
       width: 29px;
       height: 36px;
@@ -157,10 +158,12 @@
 
   .features__item--provider {
     padding-bottom: 27px;
+    padding-right: 8px;
   }
 
   .features__item--personal-price {
     padding-right: 14px;
+    padding-bottom: 20px;
   }
 
   .features__item--confidentiality {

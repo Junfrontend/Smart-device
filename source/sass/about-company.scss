@@ -139,26 +139,45 @@
   .about-company {
     width: 288px;
     margin: 0 auto;
+    padding-bottom: 65px;
 
     h2 {
       font-family: $roboto;
+      font-weight: normal;
       font-size: 28px;
       line-height: 39px;
       color: #666666;
       margin: 0;
+      margin-top: 36px;
+      margin-left: -2px;
     }
 
     p {
       margin: 0;
-      margin-top: 18px;
+      margin-top: 20px;
       font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
       color: #666666;
     }
 
+    .about-company__second-part-description {
+      margin-top: 40px;
+
+      span {
+        display: none;
+      }
+
+      &::after {
+        content: ". .";
+        position: relative;
+        top: -22.5px;
+        left: 138px;
+      }
+    }
+
     .about-company__button {
-      margin-top: 30px;
+      margin-top: 12px;
       width: 180px;
       height: 45px;
       box-sizing: border-box;

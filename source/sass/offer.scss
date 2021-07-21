@@ -161,3 +161,79 @@
     background: url("../img/lighting-engineering-tablet@1x.png") no-repeat;
   }
 }
+
+@media (max-width: 767px) {
+  .offer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #1b2d37;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 65px;
+
+    h2 {
+      width: 613px;
+      color: #ffffff;
+      font-family: $roboto;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 39px;
+      margin-top: 50px;
+      margin-left: 10px;
+      margin-bottom: 11px;
+    }
+  }
+
+  .offer__item {
+    width: 290px;
+    height: 256px;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+    font-family: $roboto;
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 30px;
+    padding-top: 19px;
+    padding-left: 35px;
+    padding-right: 125px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 63px;
+      height: 63px;
+      z-index: 5;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: url("../img/icon-arrow.svg") no-repeat center,
+        $main-blue;
+    }
+
+    &:hover {
+      &::after {
+        width: 163px;
+      }
+    }
+  }
+
+  .offer__item--produce {
+    background: url("../img/produce-boards-mobile@1x.png") no-repeat;
+  }
+
+  .offer__item--installation {
+    padding-right: 85px;
+    background: url("../img/installation-boards-mobile@1x.png") no-repeat;
+  }
+
+  .offer__item--light {
+    padding-top: 30px;
+    padding-right: 85px;
+    background: url("../img/lighting-engineering-mobile@1x.png") no-repeat;
+  }
+}

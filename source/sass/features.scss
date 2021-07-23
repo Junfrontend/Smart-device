@@ -41,6 +41,21 @@
       margin: 0;
       margin-top: 15px;
     }
+
+    &:hover,
+    &:focus {
+      background-color: $main-blue;
+
+      h2,
+      p {
+        color: #ffffff;
+      }
+
+      svg {
+        stroke: #ffffff;
+        fill: #ffffff;
+      }
+    }
   }
 
   @media (min-width: 1024px) and (max-width: 1280px) {
@@ -98,6 +113,40 @@
       margin: 0;
       margin-top: 10px;
     }
+
+    &:hover,
+    &:focus {
+      background-color: $main-blue;
+
+      h2,
+      p {
+        color: #ffffff;
+      }
+
+      svg {
+        stroke: #ffffff;
+        fill: #ffffff;
+      }
+    }
+  }
+
+  .features__item--confidentiality {
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 14px;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .features__item--personal-price {
+    p {
+      margin-top: 5px;
+      margin-left: 1px;
+    }
   }
 }
 
@@ -110,6 +159,7 @@
     width: 290px;
     margin-top: 70px;
     position: relative;
+    z-index: 1;
   }
 
   .features__item {
@@ -146,10 +196,26 @@
       margin: 0;
       margin-top: 10px;
     }
+
+    &:hover,
+    &:focus {
+      background-color: $main-blue;
+
+      h2,
+      p {
+        color: #ffffff;
+      }
+
+      svg {
+        stroke: #ffffff;
+        fill: #ffffff;
+      }
+    }
   }
 
   .features__item--time {
     padding-right: 15px;
+
     svg {
       width: 29px;
       height: 36px;
@@ -164,6 +230,21 @@
   .features__item--personal-price {
     padding-right: 14px;
     padding-bottom: 20px;
+    position: relative;
+    //overflow: hidden;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 471px;
+      height: 552px;
+      background: url("../img/triangle-with-dots-background-grey.svg") no-repeat;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: -52px;
+      left: 140px;
+      z-index: -1;
+    }
   }
 
   .features__item--confidentiality {

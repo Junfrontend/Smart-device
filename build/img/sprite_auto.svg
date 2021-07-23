@@ -69,6 +69,11 @@
 <path d="M223.109 1.38101L223.109 257.777L1.0641 129.579L223.109 1.38101Z" stroke="#EBEBEB"/>
 </symbol><symbol id="triangle-background-right" viewBox="0 0 224 259">
 <path d="M0.563971 257.777L0.563965 1.38104L222.609 129.579L0.563971 257.777Z" stroke="#EBEBEB"/>
+</symbol><symbol id="triangle-with-dots-background-grey" viewBox="0 0 560 486">
+<path opacity="1" d="M554.842 5.58362L280.167 481.335L5.49249 5.58367L554.842 5.58362Z" stroke="#ebebeb"/>
+<circle cx="5" cy="5" r="5" fill="#ebebeb"/>
+<circle cx="280" cy="481" r="5" fill="#ebebeb"/>
+<circle cx="555" cy="5" r="5" fill="#ebebeb"/>
 </symbol><symbol id="triangle-with-dots-background-left" viewBox="0 0 298 552">
 <path d="M297.208 1.73791L297.208 551.088L-178.543 276.413L297.208 1.73791Z" stroke="#EBEBEB"/>
 </symbol><symbol id="triangle-with-dots-background-right" viewBox="0 0 958 968">

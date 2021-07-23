@@ -4,7 +4,8 @@
     padding-bottom: 113px;
     background: url("../img/paper-plane@1x.png") no-repeat 350px 161px,
       url("../img/triangle-with-dots-background.svg") no-repeat 249px 95px,
-      url("../img/small-triangle-with-dots-background.svg") no-repeat 197px 292px / 330px 292px, $main-blue;
+      url("../img/small-triangle-with-dots-background.svg") no-repeat 197px 292px / 330px 292px,
+      $main-blue;
 
     fieldset {
       border: none;
@@ -54,6 +55,11 @@
       &::placeholder {
         color: #ffffff;
       }
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
     }
 
     textarea {
@@ -76,6 +82,11 @@
       &::placeholder {
         color: #ffffff;
       }
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
     }
 
     button {
@@ -96,6 +107,11 @@
       margin-left: 5px;
       box-sizing: border-box;
       padding-right: 6px;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
     }
 
     label {
@@ -131,6 +147,13 @@
           position: absolute;
           left: -32px;
         }
+
+        &:hover,
+        &:focus {
+          &::before {
+            transform: scale(1.2);
+          }
+        }
       }
     }
 
@@ -157,7 +180,8 @@
       padding-bottom: 113px;
       background: url("../img/paper-plane@1x.png") no-repeat 100px 161px / 25% 25%,
         url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
-        url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px, $main-blue;
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
+        $main-blue;
 
 
       fieldset {
@@ -173,7 +197,8 @@
       padding-bottom: 113px;
       background: url("../img/paper-plane@1x.png") no-repeat 150px 161px / 30% 30%,
         url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
-        url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px, $main-blue;
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
+        $main-blue;
     }
   }
 
@@ -183,14 +208,16 @@
       padding-bottom: 113px;
       background: url("../img/paper-plane@1x.png") no-repeat 250px 161px / 30% 30%,
         url("../img/triangle-with-dots-background.svg") no-repeat 149px 95px,
-        url("../img/small-triangle-with-dots-background.svg") no-repeat 97px 292px / 330px 292px, $main-blue;
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 97px 292px / 330px 292px,
+        $main-blue;
     }
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .form {
-    padding-top: 83px;
+    padding-top: 80px;
+    padding-left: 2px;
     padding-bottom: 103px;
     background: $main-blue;
 
@@ -234,11 +261,16 @@
       line-height: 22px;
       color: #ffffff;
       margin-top: 53px;
-      padding-left: 17px;
+      padding-left: 18px;
       margin-left: 4px;
 
       &::placeholder {
         color: #ffffff;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.3);
       }
     }
 
@@ -254,13 +286,18 @@
       line-height: 22px;
       color: #ffffff;
       resize: none;
-      margin-top: 40px;
+      margin-top: 44px;
       margin-left: 5px;
       padding-left: 17px;
       padding-top: 12px;
 
       &::placeholder {
         color: #ffffff;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.3);
       }
     }
 
@@ -278,10 +315,15 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       border-radius: 5px;
-      margin-top: 47px;
+      margin-top: 44px;
       margin-left: 6px;
       box-sizing: border-box;
       padding-right: 6px;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
     }
 
     label {
@@ -298,13 +340,13 @@
       input {
         width: 16px;
         height: 16px;
-        display: none;
+        opacity: 0;
       }
 
       label {
         display: flex;
         position: relative;
-        top: 56px;
+        top: 53px;
         left: 52px;
 
         &::before {
@@ -315,8 +357,15 @@
           border: 1px solid #ffffff;
           box-sizing: border-box;
           position: absolute;
-          left: -33px;
+          left: -34px;
           top: 1px;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            transform: scale(1.2);
+          }
         }
       }
     }
@@ -331,7 +380,7 @@
           border: 1px solid #ffffff;
           box-sizing: border-box;
           position: absolute;
-          left: -32px;
+          left: -34px;
           background: url("../img/icon-check.svg") no-repeat center;
         }
       }
@@ -391,6 +440,11 @@
       &::placeholder {
         color: #ffffff;
       }
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
     }
 
     textarea {
@@ -412,6 +466,11 @@
       &::placeholder {
         color: #ffffff;
       }
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
     }
 
     button {
@@ -431,6 +490,11 @@
       margin-top: 30px;
       box-sizing: border-box;
       padding-right: 6px;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
     }
 
     label {
@@ -467,6 +531,13 @@
           left: -33px;
           top: 1px;
         }
+
+        &:hover,
+        &:focus {
+          &::before {
+            transform: scale(1.2);
+          }
+        }
       }
     }
 
@@ -480,7 +551,7 @@
           border: 1px solid #ffffff;
           box-sizing: border-box;
           position: absolute;
-          left: -32px;
+          left: -33px;
           background: url("../img/icon-check.svg") no-repeat center;
         }
       }

@@ -26,7 +26,6 @@
     width: 486px;
     background: $main-blue;
     box-sizing: border-box;
-    padding: 0;
     display: block;
     border: none;
     padding: 0 39px 36px 39px;
@@ -72,6 +71,11 @@
       &::placeholder {
         color: #ffffff;
       }
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
     }
 
     textarea {
@@ -92,6 +96,11 @@
       &::placeholder {
         color: #ffffff;
       }
+
+      &:hover,
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
     }
 
     button {
@@ -111,6 +120,11 @@
       margin-top: 30px;
       box-sizing: border-box;
       padding-right: 6px;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
     }
 
     label {
@@ -134,6 +148,13 @@
         top: 36px;
         left: 48px;
         width: 330px;
+
+        &:hover,
+        &:focus {
+          &::before {
+            transform: scale(1.2);
+          }
+        }
 
         &::before {
           content: "";
@@ -175,6 +196,9 @@
       button {
         border: none;
         background: none;
+        width: 20px;
+        height: 20px;
+
         &::before,
         &::after {
           content: "";
@@ -191,6 +215,17 @@
 
         &::before {
           transform: rotate(-45deg);
+        }
+
+        &:hover,
+        &:focus {
+          &::after {
+            transform: rotate(90deg);
+          }
+
+          &::before {
+            transform: rotate(0deg);
+          }
         }
       }
     }

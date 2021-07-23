@@ -96,7 +96,7 @@
     width: 532px;
     position: relative;
     margin-left: 209px;
-    padding-bottom: 85px;
+    padding-bottom: 83px;
 
     h2 {
       font-family: $roboto;
@@ -110,7 +110,6 @@
 
     p {
       margin: 0;
-      margin-top: 18px;
       font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
@@ -121,6 +120,7 @@
 
     span {
       display: none;
+
       &::after {
         content: "..";
         display: block;
@@ -134,8 +134,8 @@
     }
 
     .about-company__button {
-      margin-top: 40px;
-      margin-left: 5px;
+      margin-top: 41px;
+      margin-left: 3px;
       width: 180px;
       height: 45px;
       box-sizing: border-box;
@@ -158,10 +158,12 @@
       left: -217px;
       width: 251px;
       height: 362px;
+      top: -2px;
       transform: rotate(90);
       background: url("../img/about-company-2005@1x.png") no-repeat 0 0 / cover;
     }
   }
+
   @media (min-width: 800px) and (max-width: 1023px) {
     .about-company {
       margin-left: 260px;

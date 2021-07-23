@@ -46,7 +46,7 @@
       }
     }
 
-    a[href="#form"] {
+    a {
       display: block;
       text-decoration: none;
       width: 407px;
@@ -63,6 +63,11 @@
       box-sizing: border-box;
       margin-top: 70px;
       margin-left: 18%;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
     }
 
     height: 760px;
@@ -71,8 +76,8 @@
     margin: 0 auto;
     box-sizing: border-box;
     background: url("../img/intro-background-desktop@1x.png") no-repeat 1038px 140px,
-    url("../img/triangle-with-dots-background.svg") no-repeat 1102px 154px,
-    url("../img/small-triangle-with-dots-background.svg") no-repeat 1051px 352px;
+      url("../img/triangle-with-dots-background.svg") no-repeat 1102px 154px,
+      url("../img/small-triangle-with-dots-background.svg") no-repeat 1051px 352px;
   }
 
   .intro__scroll-down {
@@ -89,13 +94,18 @@
       color: #ffffff;
       opacity: 0.5;
       border: none;
-      width: auto;
       height: auto;
       background: none;
       text-transform: none;
       letter-spacing: -0.1px;
       display: block;
       width: 92px;
+
+      &:hover,
+      &:focus {
+        transform: scaleX(1.2);
+        color: $main-blue;
+      }
     }
   }
 
@@ -130,8 +140,8 @@
       }
 
       background: url("../img/intro-background-desktop@1x.png") no-repeat 908px 140px,
-      url("../img/triangle-with-dots-background.svg") no-repeat 872px 154px,
-      url("../img/small-triangle-with-dots-background.svg") no-repeat 931px 352px;
+        url("../img/triangle-with-dots-background.svg") no-repeat 872px 154px,
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 931px 352px;
     }
   }
 
@@ -152,8 +162,8 @@
       }
 
       background: url("../img/intro-background-desktop@1x.png") no-repeat 728px 140px,
-      url("../img/triangle-with-dots-background.svg") no-repeat 692px 154px,
-      url("../img/small-triangle-with-dots-background.svg") no-repeat 751px 352px;
+        url("../img/triangle-with-dots-background.svg") no-repeat 692px 154px,
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 751px 352px;
     }
 
     .intro__scroll-down {
@@ -178,8 +188,8 @@
       }
 
       background: url("../img/intro-background-desktop@1x.png") no-repeat 628px 140px,
-      url("../img/triangle-with-dots-background.svg") no-repeat 592px 154px,
-      url("../img/small-triangle-with-dots-background.svg") no-repeat 651px 352px;
+        url("../img/triangle-with-dots-background.svg") no-repeat 592px 154px,
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 651px 352px;
     }
 
     .intro__scroll-down {
@@ -255,14 +265,19 @@
       margin-top: 85px;
       margin-left: 18%;
       border-radius: 5px;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
     }
 
     height: 560px;
     padding-top: 116px;
     box-sizing: border-box;
     background: url("../img/intro-background-desktop@1x.png") no-repeat 510px 18.4% / 465px 340px,
-    url("../img/triangle-with-dots-background.svg") no-repeat 497px -15% / 440px 440px,
-    url("../img/small-triangle-with-dots-background.svg") no-repeat 457px 50% / 261px 261px;
+      url("../img/triangle-with-dots-background.svg") no-repeat 497px -15% / 440px 440px,
+      url("../img/small-triangle-with-dots-background.svg") no-repeat 457px 50% / 261px 261px;
   }
 
   .intro__scroll-down {
@@ -298,7 +313,7 @@
       position: absolute;
       top: 0;
       z-index: -1;
-      background: url("../img/main-background-desktop@1x.png");
+      background: url("../img/main-background-desktop@1x.png"), #30313a;
       background-position: bottom;
       height: 647px;
       width: 100%;
@@ -363,14 +378,27 @@
         font-size: 16px;
         letter-spacing: 0.05em;
       }
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
     }
 
     height: 560px;
     padding-top: 231px;
     box-sizing: border-box;
     background: url("../img/intro-background-desktop@1x.png") no-repeat 26px 37px / 301px 220px,
-    url("../img/small-triangle-with-dots-background.svg") no-repeat 206px -3px / 261px 261px,
-    url("../img/small-triangle-with-dots-background.svg") no-repeat 168px 148px / 250px 250px;
+      url("../img/small-triangle-with-dots-background.svg") no-repeat 206px -3px / 261px 261px,
+      url("../img/small-triangle-with-dots-background.svg") no-repeat 168px 148px / 250px 250px;
+  }
+
+  @media (min-width: 350px) and (max-width: 767px) {
+    .intro {
+      background: url("../img/intro-background-desktop@1x.png") no-repeat 70% 37px / 301px 220px,
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 80% -3px / 261px 261px,
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 60% 148px / 250px 250px;
+    }
   }
 
   .intro__scroll-down {

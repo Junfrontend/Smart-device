@@ -82,9 +82,35 @@
   }
 
   @media (min-width: 1024px) and (max-width: 1280px) {
+    .offer {
+      padding: 0;
+    }
+
     .offer__item {
-      width: 280px;
-      margin: 0 27px;
+      width: 270px;
+      margin: 0 15px;
+      height: 500px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .offer {
+      padding: 0 50px;
+      padding-bottom: 77px;
+    }
+  }
+
+  @media (min-width: 1441px) and (max-width: 1700px) {
+    .offer {
+      padding: 0 150px;
+      padding-bottom: 100px;
+    }
+  }
+
+  @media (min-width: 1701px) and (max-width: 1900px) {
+    .offer {
+      padding: 0 275px;
+      padding-bottom: 127px;
     }
   }
 }
@@ -112,7 +138,7 @@
   }
 
   .offer__item {
-    width: 723px;
+    width: 100%;
     height: 256px;
     box-sizing: border-box;
     z-index: 2;
@@ -149,16 +175,16 @@
   }
 
   .offer__item--produce {
-    background: url("../img/produce-boards-tablet@1x.png") no-repeat;
+    background: url("../img/produce-boards-tablet@1x.png") no-repeat 0 0 / cover;
   }
 
   .offer__item--installation {
     padding-right: 515px;
-    background: url("../img/installation-boards-tablet@1x.png") no-repeat;
+    background: url("../img/installation-boards-tablet@1x.png") no-repeat  0 0 / cover;
   }
 
   .offer__item--light {
-    background: url("../img/lighting-engineering-tablet@1x.png") no-repeat;
+    background: url("../img/lighting-engineering-tablet@1x.png") no-repeat  0 0 / cover;
   }
 }
 

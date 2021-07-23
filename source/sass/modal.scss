@@ -12,36 +12,46 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
+
+    form {
+      width: 486px;
+      position: relative;
+      left: calc((100% - 495px) / 2);
+      top: 116px;
+    }
   }
 
   .modal__form {
-    height: 605px;
-    width: 409px;
+    height: 625px;
+    width: 486px;
     background: $main-blue;
     box-sizing: border-box;
-    padding: 33px 39px 36px 39px;
+    padding: 0;
+    display: block;
     border: none;
-    position: relative;
-    left: calc((100% - 409px) / 2);
-    top: 136px;
+    padding: 0 39px 36px 39px;
 
     legend {
-      margin: 0;
       padding: 0;
+      margin: 0;
       color: #ffffff;
       font-family: $roboto;
       font-size: 28px;
       line-height: 39px;
-      width: 243px;
+      position: relative;
+      top: 50px;
+      left: -2px;
     }
 
     span {
+      display: block;
       font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
       color: #ffffff;
-      margin-top: 12px;
-      width: 269px;
+      margin-top: 63px;
+      margin-bottom: 30px;
+      width: 381px;
     }
 
     input {
@@ -55,9 +65,9 @@
       font-size: 16px;
       line-height: 22px;
       color: #ffffff;
-      margin-top: 25px;
-      margin-bottom: 5px;
-      padding-left: 17px;
+      margin-bottom: 30px;
+      padding-left: 22px;
+      padding-bottom: 5px;
 
       &::placeholder {
         color: #ffffff;
@@ -76,8 +86,7 @@
       line-height: 22px;
       color: #ffffff;
       resize: none;
-      margin-top: 25px;
-      padding-left: 17px;
+      padding-left: 20px;
       padding-top: 12px;
 
       &::placeholder {
@@ -112,9 +121,7 @@
       opacity: 0.8;
     }
 
-    .form__checkbox {
-      width: 290px;
-
+    .modal__checkbox {
       input {
         width: 16px;
         height: 16px;
@@ -124,8 +131,9 @@
       label {
         display: flex;
         position: relative;
-        top: 31px;
-        left: 33px;
+        top: 36px;
+        left: 48px;
+        width: 330px;
 
         &::before {
           content: "";
@@ -135,13 +143,13 @@
           border: 1px solid #ffffff;
           box-sizing: border-box;
           position: absolute;
-          left: -33px;
+          left: -48px;
           top: 1px;
         }
       }
     }
 
-    .form__checkbox--checked {
+    .modal__checkbox--checked {
       label {
         &::before {
           content: "";
@@ -151,10 +159,46 @@
           border: 1px solid #ffffff;
           box-sizing: border-box;
           position: absolute;
-          left: -32px;
+          left: -48px;
           background: url("../img/icon-check.svg") no-repeat center;
         }
       }
     }
+
+    .modal__close-button {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -5px;
+      right: 17px;
+
+      button {
+        border: none;
+        background: none;
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 20px;
+          height: 1px;
+          background: #ffffff;
+        }
+
+        &::after {
+          transform: rotate(45deg);
+        }
+
+        &::before {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .modal {
+    display: none;
   }
 }

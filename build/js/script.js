@@ -1,6 +1,9 @@
 let orderCallButton = document.querySelector(".contacts__order-call");
 let modal = document.querySelector(".modal");
-let modalFieldset = modal.querySelector("fieldset");
+let form = modal.querySelector("form");
+let modalCloseButton = document.getElementById("close-button");
+
+console.log(modalCloseButton);
 
 orderCallButton.addEventListener(("click"), function (e) {
     e.preventDefault();
@@ -11,9 +14,7 @@ orderCallButton.addEventListener(("click"), function (e) {
 modal.addEventListener(("click"), function(evt) {
   console.log("Тык в модалку", evt.target);
   if (evt.target !== modalFieldset) {
-    console.log("Тык в модалку pip", evt.target);
     modal.classList.add("modal--closed");
     modal.classList.remove("modal--opened");
   }
 })
-

@@ -9,6 +9,9 @@
     content="Проект для отработки навыков в Акселераторе от HTMLAcademy. Автор: Белобородов Данил. https://github.com/Junfrontend">
   <title>Smart device проект для акселератора в HTMLAcademy</title>
   <link type="text/css" rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/PT-Mono.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/Roboto.woff2" as="font" crossorigin="">
 </head>
 
 <body>
@@ -213,10 +216,10 @@
     </symbol>
   </svg>
   <header class="header">
-    <svg class="header__logo-big">
+    <svg class="header__logo-big" height="52" width="202">
       <use xlink:href="#logo-big-white"></use>
     </svg>
-    <svg class="header__logo-small">
+    <svg class="header__logo-small" height="38" width="38">
       <use xlink:href="#logo-small"></use>
     </svg>
     <div class="header__contacts contacts">
@@ -235,7 +238,7 @@
     <div class="features-and-about-company-background-wrapper">
       <section class="features" id="features">
         <div class="features__item features__item--time">
-          <svg>
+          <svg height="35" width="29">
             <use xlink:href="#icon-watch"></use>
           </svg>
           <h2>Оперативные сроки</h2>
@@ -245,7 +248,7 @@
           </p>
         </div>
         <div class="features__item features__item--provider">
-          <svg>
+          <svg height="35" width="35">
             <use xlink:href="#icon-provider"></use>
           </svg>
           <h2>Крупные поставщики</h2>
@@ -256,7 +259,7 @@
           </p>
         </div>
         <div class="features__item features__item--confidentiality">
-          <svg width="36" heigth="31">
+          <svg width="36" height="31">
             <use xlink:href="#icon-confidentiality"></use>
           </svg>
           <h2>Полная конфиденциальность</h2>
@@ -264,7 +267,7 @@
           </p>
         </div>
         <div class="features__item features__item--personal-price">
-          <svg>
+          <svg width="35" height="35">
             <use xlink:href="#icon-tag"></use>
           </svg>
           <h2>Персонализация стоимости</h2>
@@ -334,24 +337,24 @@
   <footer class="footer">
     <div class="footer__main-info main-info">
       <div class="main-info__logo-and-social">
-        <svg class="main-info__logo">
+        <svg class="main-info__logo" height="52" width="52">
           <use xlink:href="#logo-small"></use>
         </svg>
         <h2>Service Device</h2>
         <div class="main-info__company-info"><span>1999-2018 SD Service Devices</span></div>
         <div class="main-info__social-icons">
           <a href="https://ru-ru.facebook.com/">
-            <svg>
+            <svg width="29" height="29">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
           <a href="https://ok.ru/">
-            <svg>
+            <svg width="29" height="29">
               <use xlink:href="#icon-classmates"></use>
             </svg>
           </a>
           <a href="https://vk.com/feed">
-            <svg>
+            <svg width="29" height="29">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
@@ -419,7 +422,7 @@
       </fieldset>
     </form>
   </div>
-  <script src="../js/script.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

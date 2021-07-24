@@ -2,7 +2,7 @@
   .form {
     padding-top: 92px;
     padding-bottom: 113px;
-    background: url("../img/paper-plane@1x.png") no-repeat 350px 161px,
+    background: url("../img/paper-plane@1x.webp") no-repeat 350px 161px,
       url("../img/triangle-with-dots-background.svg") no-repeat 249px 95px,
       url("../img/small-triangle-with-dots-background.svg") no-repeat 197px 292px / 330px 292px,
       $main-blue;
@@ -178,7 +178,7 @@
     .form {
       padding-top: 92px;
       padding-bottom: 113px;
-      background: url("../img/paper-plane@1x.png") no-repeat 100px 161px / 25% 25%,
+      background: url("../img/paper-plane@1x.webp") no-repeat 100px 161px / 25% 25%,
         url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
         url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
         $main-blue;
@@ -189,16 +189,38 @@
         left: 35%;
       }
     }
+
+    @media (min-resolution: 2dppx) {
+      .form {
+        padding-top: 92px;
+        padding-bottom: 113px;
+        background: url("../img/paper-plane@2x.webp") no-repeat 100px 161px / 25% 25%,
+          url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
+          url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
+          $main-blue;
+      }
+    }
   }
 
   @media (min-width: 1281px) and (max-width: 1440px) {
     .form {
       padding-top: 92px;
       padding-bottom: 113px;
-      background: url("../img/paper-plane@1x.png") no-repeat 150px 161px / 30% 30%,
+      background: url("../img/paper-plane@1x.webp") no-repeat 150px 161px / 30% 30%,
         url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
         url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
         $main-blue;
+    }
+
+    @media (min-resolution: 2dppx) {
+      .form {
+        padding-top: 92px;
+        padding-bottom: 113px;
+        background: url("../img/paper-plane@2x.webp") no-repeat 150px 161px / 30% 30%,
+          url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
+          url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
+          $main-blue;
+      }
     }
   }
 
@@ -206,9 +228,31 @@
     .form {
       padding-top: 92px;
       padding-bottom: 113px;
-      background: url("../img/paper-plane@1x.png") no-repeat 250px 161px / 30% 30%,
+      background: url("../img/paper-plane@1x.webp") no-repeat 250px 161px / 30% 30%,
         url("../img/triangle-with-dots-background.svg") no-repeat 149px 95px,
         url("../img/small-triangle-with-dots-background.svg") no-repeat 97px 292px / 330px 292px,
+        $main-blue;
+    }
+
+    @media (min-resolution: 2dppx) {
+      .form {
+        padding-top: 92px;
+        padding-bottom: 113px;
+        background: url("../img/paper-plane@2x.webp") no-repeat 250px 161px / 30% 30%,
+          url("../img/triangle-with-dots-background.svg") no-repeat 149px 95px,
+          url("../img/small-triangle-with-dots-background.svg") no-repeat 97px 292px / 330px 292px,
+          $main-blue;
+      }
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .form {
+      padding-top: 92px;
+      padding-bottom: 113px;
+      background: url("../img/paper-plane@2x.webp") no-repeat 350px 161px / 511px 288px,
+        url("../img/triangle-with-dots-background.svg") no-repeat 249px 95px,
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 197px 292px / 330px 292px,
         $main-blue;
     }
   }

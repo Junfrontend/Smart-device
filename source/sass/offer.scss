@@ -53,7 +53,7 @@
     color: #ffffff;
     width: 370px;
     height: 620px;
-    background: url("../img/produce-boards-desktop@1x.png");
+    background: url("../img/produce-boards-desktop@1x.webp"), #30313a;
     font-family: $roboto;
     font-size: 20px;
     line-height: 30px;
@@ -65,7 +65,7 @@
     color: #ffffff;
     width: 370px;
     height: 620px;
-    background: url("../img/installation-boards-desktop@1x.png");
+    background: url("../img/installation-boards-desktop@1x.webp"), #30313a;
     font-family: $roboto;
     font-size: 20px;
     line-height: 30px;
@@ -77,7 +77,7 @@
     color: #ffffff;
     width: 370px;
     height: 620px;
-    background: url("../img/lighting-engineering-desktop@1x.png");
+    background: url("../img/lighting-engineering-desktop@1x.webp"), #30313a;
     font-family: $roboto;
     font-size: 20px;
     line-height: 30px;
@@ -114,6 +114,20 @@
     .offer {
       padding: 0 275px;
       padding-bottom: 127px;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .offer__item--produce {
+      background: url("../img/produce-boards-desktop@2x.webp") 0 0 / cover, #30313a;
+    }
+
+    .offer__item--installation {
+      background: url("../img/installation-boards-desktop@2x.webp") 0 0 / cover, #30313a;
+    }
+
+    .offer__item--light {
+      background: url("../img/lighting-engineering-desktop@2x.webp") 0 0 / cover, #30313a;
     }
   }
 }
@@ -179,17 +193,31 @@
   }
 
   .offer__item--produce {
-    background: url("../img/produce-boards-tablet@1x.png") no-repeat 0 0 / cover;
+    background: url("../img/produce-boards-tablet@1x.webp") no-repeat 0 0 / cover, #30313a;
   }
 
   .offer__item--installation {
     padding-right: 515px;
-    background: url("../img/installation-boards-tablet@1x.png") no-repeat  0 0 / cover;
+    background: url("../img/installation-boards-tablet@1x.webp") no-repeat  0 0 / cover, #30313a;
   }
 
   .offer__item--light {
     padding-top: 50px;
-    background: url("../img/lighting-engineering-tablet@1x.png") no-repeat  0 0 / cover;
+    background: url("../img/lighting-engineering-tablet@1x.webp") no-repeat  0 0 / cover, #30313a;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .offer__item--produce {
+      background: url("../img/produce-boards-tablet@2x.webp") 0 0 / cover, #30313a;
+    }
+
+    .offer__item--installation {
+      background: url("../img/installation-boards-tablet@2x.webp") 0 0 / cover, #30313a;
+    }
+
+    .offer__item--light {
+      background: url("../img/lighting-engineering-tablet@2x.webp") 0 0 / cover, #30313a;
+    }
   }
 }
 
@@ -256,17 +284,31 @@
   }
 
   .offer__item--produce {
-    background: url("../img/produce-boards-mobile@1x.png") no-repeat 0 0 / cover;
+    background: url("../img/produce-boards-mobile@1x.webp") no-repeat 0 0 / cover, #30313a;
   }
 
   .offer__item--installation {
     padding-right: 85px;
-    background: url("../img/installation-boards-mobile@1x.png") no-repeat 0 0 / cover;
+    background: url("../img/installation-boards-mobile@1x.webp") no-repeat 0 0 / cover, #30313a;
   }
 
   .offer__item--light {
     padding-top: 30px;
     padding-right: 85px;
-    background: url("../img/lighting-engineering-mobile@1x.png") no-repeat 0 0 / cover;
+    background: url("../img/lighting-engineering-mobile@1x.webp") no-repeat 0 0 / cover, #30313a;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .offer__item--produce {
+      background: url("../img/produce-boards-mobile@2x.webp") 0 0 / cover, #30313a;
+    }
+
+    .offer__item--installation {
+      background: url("../img/installation-boards-mobile@2x.webp") 0 0 / cover, #30313a;
+    }
+
+    .offer__item--light {
+      background: url("../img/lighting-engineering-mobile@2x.webp") 0 0 / cover, #30313a;
+    }
   }
 }

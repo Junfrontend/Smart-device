@@ -5,7 +5,6 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 1170px;
-    margin-top: 112px;
     position: relative;
   }
 
@@ -55,6 +54,34 @@
         stroke: #ffffff;
         fill: #ffffff;
       }
+    }
+  }
+
+  .features__item--time {
+    svg {
+      width: 29px;
+      height: 35px;
+    }
+  }
+
+  .features__item--provider {
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .features__item--personal-price {
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .features__item--confidentiality {
+    svg {
+      width: 36px;
+      height: 31px;
     }
   }
 
@@ -160,6 +187,20 @@
     margin-top: 70px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 471px;
+      height: 552px;
+      background: url("../img/triangle-with-dots-background-grey.svg") no-repeat;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 106px;
+      left: -25px;
+      z-index: -1;
+    }
   }
 
   .features__item {
@@ -230,21 +271,6 @@
   .features__item--personal-price {
     padding-right: 14px;
     padding-bottom: 20px;
-    position: relative;
-    //overflow: hidden;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 471px;
-      height: 552px;
-      background: url("../img/triangle-with-dots-background-grey.svg") no-repeat;
-      transform: rotate(-90deg);
-      position: absolute;
-      top: -52px;
-      left: 140px;
-      z-index: -1;
-    }
   }
 
   .features__item--confidentiality {

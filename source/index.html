@@ -213,10 +213,10 @@
     </symbol>
   </svg>
   <header class="header">
-    <svg class="header__logo-big" height="52" width="202" alt="Логотип компании">
+    <svg class="header__logo-big">
       <use xlink:href="#logo-big-white"></use>
     </svg>
-    <svg class="header__logo-small" height="38" width="38" alt="Логотип компании">
+    <svg class="header__logo-small">
       <use xlink:href="#logo-small"></use>
     </svg>
     <div class="header__contacts contacts">
@@ -232,67 +232,69 @@
       <a href="#form">получить бесплатную консультацию</a>
       <div class="intro__scroll-down"><a href="#features">Скролл вниз</a></div>
     </section>
-    <section class="features" id="features">
-      <div class="features__item features__item--time">
-        <svg width="29" heigth="35">
-          <use xlink:href="#icon-watch"></use>
-        </svg>
-        <h2>Оперативные сроки</h2>
+    <div class="features-and-about-company-background-wrapper">
+      <section class="features" id="features">
+        <div class="features__item features__item--time">
+          <svg>
+            <use xlink:href="#icon-watch"></use>
+          </svg>
+          <h2>Оперативные сроки</h2>
+          <p>
+            Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
+            производить и доставлять заказы плат и комплектующих в самые короткие сроки
+          </p>
+        </div>
+        <div class="features__item features__item--provider">
+          <svg>
+            <use xlink:href="#icon-provider"></use>
+          </svg>
+          <h2>Крупные поставщики</h2>
+          <p>
+            Нашими поставщиками являются такие крупные мировые компании как:
+            OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями
+            обеспичивает хорошее качество нашей продукции.
+          </p>
+        </div>
+        <div class="features__item features__item--confidentiality">
+          <svg width="36" heigth="31">
+            <use xlink:href="#icon-confidentiality"></use>
+          </svg>
+          <h2>Полная конфиденциальность</h2>
+          <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
+          </p>
+        </div>
+        <div class="features__item features__item--personal-price">
+          <svg>
+            <use xlink:href="#icon-tag"></use>
+          </svg>
+          <h2>Персонализация стоимости</h2>
+          <p>
+            Мы подбираем определенную фабрику, поставщиков, вид доставки,
+            чтобы установить ту цену, которая Вас устраивает.
+          </p>
+        </div>
+      </section>
+      <section class="about-company">
+        <h2>О компании</h2>
         <p>
-          Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
-          производить и доставлять заказы плат и комплектующих в самые короткие сроки
+          Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
+          года.
+          Выполняем срочные заказы и пилотные образцы до 10 дней.
         </p>
-      </div>
-      <div class="features__item features__item--provider">
-        <svg width="35" heigth="35">
-          <use xlink:href="#icon-provider"></use>
-        </svg>
-        <h2>Крупные поставщики</h2>
-        <p>
-          Нашими поставщиками являются такие крупные мировые компании как:
-          OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями
-          обеспичивает хорошее качество нашей продукции.
-        </p>
-      </div>
-      <div class="features__item features__item--confidentiality">
-        <svg width="36" heigth="31">
-          <use xlink:href="#icon-confidentiality"></use>
-        </svg>
-        <h2>Полная конфиденциальность</h2>
-        <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
-        </p>
-      </div>
-      <div class="features__item features__item--personal-price">
-        <svg width="35" heigth="35">
-          <use xlink:href="#icon-tag"></use>
-        </svg>
-        <h2>Персонализация стоимости</h2>
-        <p>
-          Мы подбираем определенную фабрику, поставщиков, вид доставки,
-          чтобы установить ту цену, которая Вас устраивает.
-        </p>
-      </div>
-    </section>
-    <section class="about-company">
-      <h2>О компании</h2>
-      <p>
-        Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
-        года.
-        Выполняем срочные заказы и пилотные образцы до 10 дней.
-      </p>
-      <div class="about-company__second-part-description">
-        <p>
-          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-          Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
-          <span>
-            (РЖД),
-            РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-            Среди наших клиентов крупнейшие Производители светотехники России.
-          </span>
-        </p>
-      </div>
-      <button class="about-company__button" type="button">Подробнее</button>
-    </section>
+        <div class="about-company__second-part-description">
+          <p>
+            Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+            <span>
+              (РЖД),
+              РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+              Среди наших клиентов крупнейшие Производители светотехники России.
+            </span>
+          </p>
+        </div>
+        <button class="about-company__button" type="button">Подробнее</button>
+      </section>
+    </div>
     <section class="offer">
       <h2>Service Device предлагает следующие товары и услуги</h2>
       <a href="#" class="offer__item offer__item--produce">
@@ -314,7 +316,7 @@
           <input type="text" name="nameForm" id="formName" placeholder="Имя" required pattern="[A-Za-zА-Яа-я' -]+">
         </label>
         <label>
-          <input type="phone" name="phoneForm" id="formPhone" placeholder="Телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          <input type="tel" name="phoneForm" id="formPhone" placeholder="Телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         </label>
         <label>
           <textarea name="questionForm" id="formQuestion" placeholder="Ваш вопрос"></textarea>
@@ -332,30 +334,30 @@
   <footer class="footer">
     <div class="footer__main-info main-info">
       <div class="main-info__logo-and-social">
-        <svg class="main-info__logo" height="52" width="52" alt="Логотип компании">
+        <svg class="main-info__logo">
           <use xlink:href="#logo-small"></use>
         </svg>
         <h2>Service Device</h2>
         <div class="main-info__company-info"><span>1999-2018 SD Service Devices</span></div>
         <div class="main-info__social-icons">
           <a href="https://ru-ru.facebook.com/">
-            <svg width="29" height="29">
+            <svg>
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
           <a href="https://ok.ru/">
-            <svg width="29" height="29">
+            <svg>
               <use xlink:href="#icon-classmates"></use>
             </svg>
           </a>
           <a href="https://vk.com/feed">
-            <svg width="29" height="29">
+            <svg>
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </div>
       </div>
-      <nav class="main-info__nav main-info__nav--closed">
+      <nav class="main-info__nav main-info__nav--no-js ">
         <h3>Разделы сайта</h3>
         <ul>
           <li><a href="#">О компании</a></li>
@@ -367,7 +369,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <div class="main-info__contacts main-info__contacts--closed">
+      <div class="main-info__contacts main-info__contacts--no-js">
         <h3>наш офис</h3>
         <a href="https://goo.gl/maps/eCSfJmipaqkwZU5SA">г. Мытищи, Олимпийский проспект, д.10</a>
         <a href="tel:+74955894050">
@@ -396,18 +398,18 @@
         <legend>Закажите звонок</legend>
         <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
         <label>
-          <input type="text" name="nameModal" placeholder="Имя" id="modalName" required>
+          <input type="text" name="nameModal" placeholder="Имя" id="modalName" pattern="^([a-zA-Z\s\-]|[а-яА-Я\s\-])+$" required>
         </label>
         <label>
-          <input type="phone" name="phoneModal" placeholder="Телефон" id="modalPhone" required>
+          <input type="tel" name="phoneModal" placeholder="Телефон" id="modalPhone" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
         </label>
         <label>
           <textarea name="questionModal" placeholder="Ваш вопрос" id="modalQuestion"></textarea>
         </label>
         <button type="submit" id="sendModal">отправить</button>
-        <div class="modal__checkbox">
+        <div class="modal__checkbox modal__checkbox--checked">
           <label>
-            <input type="checkbox" required name="personalDataModal">
+            <input type="checkbox" required name="personalDataModal" checked>
             Я согласен на обработку персональных данных
           </label>
         </div>

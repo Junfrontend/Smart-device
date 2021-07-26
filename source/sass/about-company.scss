@@ -1,3 +1,40 @@
+.about-company {
+  h2 {
+    font-family: $roboto;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: #666666;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-family: $PT-Mono;
+    color: #666666;
+  }
+
+  .about-company__button {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid $main-blue;
+    color: $main-blue;
+    border-radius: 5px;
+    font-family: $roboto-bold;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 13px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 180px;
+    height: 45px
+  }
+}
+
 @media (min-width: 1024px) {
   .about-company {
     width: 984px;
@@ -6,38 +43,14 @@
     margin-top: 73px;
 
     h2 {
-      font-family: $roboto;
-      font-weight: normal;
       font-size: 36px;
       line-height: 51px;
-      color: #666666;
-      margin: 0;
     }
 
     p {
-      margin: 0;
       margin-top: 21px;
-      font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
-      color: #666666;
-    }
-
-    .about-company__button {
-      margin-top: 38px;
-      width: 180px;
-      height: 45px;
-      box-sizing: border-box;
-      background-color: #ffffff;
-      border: 1px solid $main-blue;
-      color: $main-blue;
-      border-radius: 5px;
-      font-family: $roboto-bold;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
     }
 
     &::before {
@@ -69,6 +82,10 @@
     }
   }
 
+  .about-company__button {
+    margin-top: 38px;
+  }
+
   @media (min-width: 1024px) and (max-width: 1440px) {
     .about-company {
       width: 730px;
@@ -98,21 +115,14 @@
     padding-bottom: 83px;
 
     h2 {
-      font-family: $roboto;
-      font-weight: normal;
       font-size: 32px;
       line-height: 45px;
-      color: #666666;
-      margin: 0;
       margin-top: 26px;
     }
 
     p {
-      margin: 0;
-      font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
-      color: #666666;
       margin-left: 5px;
       margin-top: 25px;
     }
@@ -135,19 +145,6 @@
     .about-company__button {
       margin-top: 41px;
       margin-left: 3px;
-      width: 180px;
-      height: 45px;
-      box-sizing: border-box;
-      background-color: #ffffff;
-      border: 1px solid $main-blue;
-      color: $main-blue;
-      border-radius: 5px;
-      font-family: $roboto-bold;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
     }
 
     &::before {
@@ -192,23 +189,16 @@
     padding-bottom: 65px;
 
     h2 {
-      font-family: $roboto;
-      font-weight: normal;
       font-size: 28px;
       line-height: 39px;
-      color: #666666;
-      margin: 0;
       margin-top: 36px;
       margin-left: -2px;
     }
 
     p {
-      margin: 0;
       margin-top: 20px;
-      font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
-      color: #666666;
     }
 
     .about-company__second-part-description {
@@ -228,19 +218,6 @@
 
     .about-company__button {
       margin-top: 12px;
-      width: 180px;
-      height: 45px;
-      box-sizing: border-box;
-      background-color: #ffffff;
-      border: 1px solid $main-blue;
-      color: $main-blue;
-      border-radius: 5px;
-      font-family: $roboto-bold;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
     }
   }
 }

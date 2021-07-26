@@ -56,26 +56,12 @@ document.addEventListener(('keydown'), function (evt) {
   }
 });
 
-// Плавная прокрутка к якорю
-var anchors = document.querySelectorAll('a');
-if (anchors) {
-  for (var i = 0; i < anchors.length; i++) {
-    anchors[i].addEventListener('click', function (e) {
-      e.preventDefault();
-      var id = e.target.getAttribute('href');
-      document.querySelector(id).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    });
-  }
-}
 
-// Состояние чекбокса форма на странице
+/* Состояние чекбокса форма на странице
 var formPersonalDataCheckbox = document.querySelector('.form__checkbox');
 formPersonalDataCheckbox.addEventListener(('click'), function (evt) {
   evt.target.parentNode.classList.toggle('form__checkbox--checked');
-});
+}); */
 
 // Состояние чекбокса модальное окно
 var modalPersonalDataCheckbox = document.querySelector('.modal__checkbox');

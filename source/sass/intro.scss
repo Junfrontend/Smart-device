@@ -1,3 +1,33 @@
+.intro {
+  h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    font-family: $roboto-bold;
+  }
+
+  p {
+    font-family: $PT-Mono;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $main-blue;
+    font-family: $roboto-bold;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border-radius: 5px;
+    &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
+  }
+}
+
 @media (min-width: 1024px) {
   .intro {
     &::before {
@@ -13,22 +43,15 @@
     }
 
     h1 {
-      font-family: $roboto-bold;
       font-size: 80px;
       line-height: 94px;
       letter-spacing: 0.07em;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin: 0;
       margin-left: 13%;
     }
 
     p {
-      font-family: $PT-Mono;
       font-size: 22px;
       line-height: 34.2px;
-      color: #ffffff;
-      margin: 0;
       width: 650px;
       position: relative;
       top: 26px;
@@ -47,27 +70,15 @@
     }
 
     a {
-      display: block;
-      text-decoration: none;
       width: 407px;
       height: 55px;
-      color: #ffffff;
-      background-color: $main-blue;
-      font-family: $roboto-bold;
       font-size: 16px;
       line-height: 19px;
       text-align: center;
       letter-spacing: 0.05em;
-      text-transform: uppercase;
       padding-top: 17px;
-      box-sizing: border-box;
       margin-top: 70px;
       margin-left: 18%;
-
-      &:hover,
-      &:focus {
-        transform: scale(1.2);
-      }
     }
 
     height: 760px;
@@ -83,8 +94,8 @@
   .intro__scroll-down {
     transform: rotate(-90deg);
     position: absolute;
-    left: 215px;
-    top: 734px;
+    left: 172px;
+    top: 708px;
 
     a {
       text-decoration: none;
@@ -215,23 +226,16 @@
     }
 
     h1 {
-      font-family: $roboto-bold;
       font-size: 60px;
       line-height: 70px;
       letter-spacing: 0.07em;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin: 0;
       margin-left: 88px;
       width: 470px;
     }
 
     p {
-      font-family: $PT-Mono;
       font-size: 18px;
       line-height: 28px;
-      color: #ffffff;
-      margin: 0;
       width: 356px;
       position: relative;
       top: 29px;
@@ -250,28 +254,15 @@
     }
 
     a {
-      display: block;
-      text-decoration: none;
       width: 379px;
       height: 55px;
-      color: #ffffff;
-      background-color: $main-blue;
-      font-family: $roboto-bold;
       font-size: 16px;
       line-height: 19px;
       text-align: center;
       letter-spacing: 0.05em;
-      text-transform: uppercase;
       padding-top: 17px;
-      box-sizing: border-box;
       margin-top: 85px;
       margin-left: 18%;
-      border-radius: 5px;
-
-      &:hover,
-      &:focus {
-        transform: scale(1.2);
-      }
     }
 
     height: 560px;
@@ -322,23 +313,16 @@
     }
 
     h1 {
-      font-family: $roboto-bold;
       font-size: 40px;
       line-height: 47px;
       letter-spacing: 0.07em;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin: 0;
       margin-left: 15px;
       width: 277px;
     }
 
     p {
-      font-family: $PT-Mono;
       font-size: 16px;
       line-height: 25px;
-      color: #ffffff;
-      margin: 0;
       width: 245px;
       position: relative;
       top: 27px;
@@ -357,22 +341,15 @@
     }
 
     a {
-      display: block;
-      text-decoration: none;
       width: 287px;
       height: 55px;
       color: #ffffff;
-      background-color: $main-blue;
-      font-family: $roboto-bold;
       font-size: 0;
       line-height: 19px;
       text-align: center;
       letter-spacing: 0.05em;
-      text-transform: uppercase;
       padding-top: 17px;
-      box-sizing: border-box;
       margin: 67px 15px 0 18px;
-      border-radius: 5px;
 
       &::after {
         content: "бесплатная консультация";

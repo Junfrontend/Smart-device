@@ -225,7 +225,7 @@
     <div class="header__contacts contacts">
       <a class="contacts__email" href="mailto:info@sd.ru">info@sd.ru</a>
       <a class="contacts__phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
-      <button class="contacts__order-call" type="button">заказать звонок</button>
+      <a class="contacts__order-call">заказать звонок</a>
     </div>
   </header>
   <main>
@@ -295,7 +295,7 @@
             </span>
           </p>
         </div>
-        <button class="about-company__button" type="button">Подробнее</button>
+        <a class="about-company__button">Подробнее</a>
       </section>
     </div>
     <section class="offer">
@@ -319,15 +319,16 @@
           <input type="text" name="nameForm" id="formName" placeholder="Имя" required pattern="[A-Za-zА-Яа-я' -]+">
         </label>
         <label>
-          <input type="tel" name="phoneForm" id="formPhone" placeholder="Телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          <input type="tel" name="phoneForm" id="formPhone" placeholder="Телефон" required
+            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         </label>
         <label>
           <textarea name="questionForm" id="formQuestion" placeholder="Ваш вопрос"></textarea>
         </label>
         <button type="submit" id="sendForm">Задать вопрос</button>
         <div class="form__checkbox">
-          <label>
-            <input type="checkbox" name="personalDataForm">
+          <input type="checkbox" name="personalDataForm" id="formCheckbox">
+          <label for="formCheckbox">
             Я согласен на обработку персональных данных
           </label>
         </div>
@@ -340,7 +341,10 @@
         <svg class="main-info__logo" height="52" width="52">
           <use xlink:href="#logo-small"></use>
         </svg>
-        <h2>Service Device</h2>
+        <div class="main-info__text-wrapper">
+          <h2>Service Device</h2>
+          <span>умные технологии</span>
+        </div>
         <div class="main-info__company-info"><span>1999-2018 SD Service Devices</span></div>
         <div class="main-info__social-icons">
           <a href="https://ru-ru.facebook.com/">
@@ -388,10 +392,10 @@
     </div>
     <div class="footer__bottom-bar">
       <div>
-        <span>Все права защищены</span>
+        <span class="footer__rights">Все права защищены</span>
         <span>1999-2018 SD Service Devices</span>
       </div>
-      <span>Условия конфиденциальности</span>
+      <span class="footer__privacy">Условия конфиденциальности</span>
       <span>Developed by wow studio</span>
     </div>
   </footer>
@@ -401,10 +405,12 @@
         <legend>Закажите звонок</legend>
         <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
         <label>
-          <input type="text" name="nameModal" placeholder="Имя" id="modalName" pattern="^([a-zA-Z\s\-]|[а-яА-Я\s\-])+$" required>
+          <input type="text" name="nameModal" placeholder="Имя" id="modalName" pattern="^([a-zA-Z\s\-]|[а-яА-Я\s\-])+$"
+            required>
         </label>
         <label>
-          <input type="tel" name="phoneModal" placeholder="Телефон" id="modalPhone" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
+          <input type="tel" name="phoneModal" placeholder="Телефон" id="modalPhone"
+            pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
         </label>
         <label>
           <textarea name="questionModal" placeholder="Ваш вопрос" id="modalQuestion"></textarea>

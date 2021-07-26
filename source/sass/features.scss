@@ -1,3 +1,17 @@
+.features__item {
+  h2 {
+    font-family: $roboto;
+    color: $main-blue;
+    margin: 0;
+  }
+
+  p {
+    font-family: $PT-Mono;
+    color: #666666;
+    margin: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .features {
     display: flex;
@@ -24,20 +38,14 @@
     }
 
     h2 {
-      font-family: $roboto;
       font-size: 24px;
       line-height: 34px;
-      color: $main-blue;
-      margin: 0;
       margin-top: 15px;
     }
 
     p {
-      font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
-      color: #666666;
-      margin: 0;
       margin-top: 15px;
     }
 
@@ -127,17 +135,12 @@
       font-weight: normal;
       font-size: 24px;
       line-height: 34px;
-      color: $main-blue;
-      margin: 0;
       margin-top: 5px;
     }
 
     p {
-      font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
-      color: #666666;
-      margin: 0;
       margin-top: 10px;
     }
 
@@ -219,22 +222,16 @@
     }
 
     h2 {
-      font-family: $roboto;
       font-weight: normal;
       font-size: 20px;
       line-height: 28px;
-      color: $main-blue;
-      margin: 0;
       margin-top: 8px;
     }
 
     p {
       min-width: 245px;
-      font-family: $PT-Mono;
       font-size: 16px;
       line-height: 22px;
-      color: #666666;
-      margin: 0;
       margin-top: 10px;
     }
 

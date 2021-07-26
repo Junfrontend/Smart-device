@@ -110,7 +110,7 @@
     <div class="header__contacts contacts">
       <a class="contacts__email" href="mailto:info@sd.ru">info@sd.ru</a>
       <a class="contacts__phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
-      <button class="contacts__order-call" type="button">заказать звонок</button>
+      <a class="contacts__order-call">заказать звонок</a>
     </div>
   </header>
   <main>
@@ -180,7 +180,7 @@
             </span>
           </p>
         </div>
-        <button class="about-company__button" type="button">Подробнее</button>
+        <a class="about-company__button">Подробнее</a>
       </section>
     </div>
     <section class="offer">
@@ -211,8 +211,8 @@
         </label>
         <button type="submit" id="sendForm">Задать вопрос</button>
         <div class="form__checkbox">
-          <label>
-            <input type="checkbox" name="personalDataForm">
+          <input type="checkbox" name="personalDataForm" id="formCheckbox">
+          <label for="formCheckbox">
             Я согласен на обработку персональных данных
           </label>
         </div>
@@ -225,7 +225,10 @@
         <svg class="main-info__logo" height="52" width="52">
           <use xlink:href="#logo-small"></use>
         </svg>
-        <h2>Service Device</h2>
+        <div class="main-info__text-wrapper">
+          <h2>Service Device</h2>
+          <span>умные технологии</span>
+        </div>
         <div class="main-info__company-info"><span>1999-2018 SD Service Devices</span></div>
         <div class="main-info__social-icons">
           <a href="https://ru-ru.facebook.com/">
@@ -273,10 +276,10 @@
     </div>
     <div class="footer__bottom-bar">
       <div>
-        <span>Все права защищены</span>
+        <span class="footer__rights">Все права защищены</span>
         <span>1999-2018 SD Service Devices</span>
       </div>
-      <span>Условия конфиденциальности</span>
+      <span class="footer__privacy">Условия конфиденциальности</span>
       <span>Developed by wow studio</span>
     </div>
   </footer>

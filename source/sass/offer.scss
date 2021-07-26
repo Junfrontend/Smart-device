@@ -1,3 +1,21 @@
+.offer {
+  h2 {
+  color: #ffffff;
+      font-family: $roboto;
+      font-weight: normal;
+    }
+
+    .offer__item {
+      font-family: $roboto;
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+    }
+}
+
 @media (min-width: 1024px) {
   .offer {
     display: flex;
@@ -9,9 +27,6 @@
 
     h2 {
       width: 100%;
-      color: #ffffff;
-      font-family: $roboto;
-      font-weight: normal;
       font-size: 36px;
       line-height: 51px;
       margin-top: 89px;
@@ -48,39 +63,15 @@
   }
 
   .offer__item--produce {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    width: 370px;
-    height: 620px;
     background: url("../img/produce-boards-desktop@1x.webp"), #30313a;
-    font-family: $roboto;
-    font-size: 20px;
-    line-height: 30px;
   }
 
   .offer__item--installation {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    width: 370px;
-    height: 620px;
     background: url("../img/installation-boards-desktop@1x.webp"), #30313a;
-    font-family: $roboto;
-    font-size: 20px;
-    line-height: 30px;
   }
 
   .offer__item--light {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    width: 370px;
-    height: 620px;
     background: url("../img/lighting-engineering-desktop@1x.webp"), #30313a;
-    font-family: $roboto;
-    font-size: 20px;
-    line-height: 30px;
   }
 
   @media (min-width: 1024px) and (max-width: 1280px) {
@@ -144,9 +135,6 @@
 
     h2 {
       width: 613px;
-      color: #ffffff;
-      font-family: $roboto;
-      font-weight: normal;
       font-size: 32px;
       line-height: 45px;
       margin-top: 50px;
@@ -157,15 +145,8 @@
   .offer__item {
     width: 100%;
     height: 256px;
-    box-sizing: border-box;
     z-index: 2;
     position: relative;
-    font-family: $roboto;
-    font-size: 20px;
-    line-height: 30px;
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
     margin-bottom: 46px;
     padding-top: 40px;
     padding-left: 43px;
@@ -233,9 +214,6 @@
 
     h2 {
       width: 613px;
-      color: #ffffff;
-      font-family: $roboto;
-      font-weight: normal;
       font-size: 28px;
       line-height: 39px;
       margin-top: 50px;
@@ -247,15 +225,7 @@
   .offer__item {
     width: 100%;
     height: 256px;
-    box-sizing: border-box;
-    z-index: 2;
     position: relative;
-    font-family: $roboto;
-    font-size: 20px;
-    line-height: 30px;
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
     margin-top: 30px;
     margin-right: 10px;
     padding-top: 19px;

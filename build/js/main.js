@@ -56,19 +56,6 @@ document.addEventListener(('keydown'), function (evt) {
   }
 });
 
-
-/* Состояние чекбокса форма на странице
-var formPersonalDataCheckbox = document.querySelector('.form__checkbox');
-formPersonalDataCheckbox.addEventListener(('click'), function (evt) {
-  evt.target.parentNode.classList.toggle('form__checkbox--checked');
-}); */
-
-// Состояние чекбокса модальное окно
-var modalPersonalDataCheckbox = document.querySelector('.modal__checkbox');
-modalPersonalDataCheckbox.addEventListener(('click'), function (evt) {
-  evt.target.parentNode.classList.toggle('modal__checkbox--checked');
-});
-
 // Форма на странице
 var nameInputForm = document.getElementById('formName');
 var phoneInputForm = document.getElementById('formPhone');

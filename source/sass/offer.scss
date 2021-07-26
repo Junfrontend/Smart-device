@@ -1,19 +1,19 @@
 .offer {
   h2 {
-  color: #ffffff;
-      font-family: $roboto;
-      font-weight: normal;
-    }
+    color: #ffffff;
+    font-family: $roboto;
+    font-weight: normal;
+  }
 
-    .offer__item {
-      font-family: $roboto;
+  .offer__item {
+    font-family: $roboto;
     font-size: 20px;
     line-height: 30px;
     display: block;
     text-decoration: none;
     color: #ffffff;
     box-sizing: border-box;
-    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -40,6 +40,8 @@
     z-index: 2;
     position: relative;
     margin-top: 50px;
+    width: 370px;
+    height: 620px;
 
     &::after {
       content: "";
@@ -50,8 +52,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      background: url("../img/icon-arrow.svg") no-repeat center,
-        $main-blue;
+      background: url("../img/icon-arrow.svg") no-repeat center, $main-blue;
     }
 
     &:hover,
@@ -161,8 +162,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      background: url("../img/icon-arrow.svg") no-repeat center,
-        $main-blue;
+      background: url("../img/icon-arrow.svg") no-repeat center, $main-blue;
     }
 
     &:hover,
@@ -179,12 +179,12 @@
 
   .offer__item--installation {
     padding-right: 515px;
-    background: url("../img/installation-boards-tablet@1x.webp") no-repeat  0 0 / cover, #30313a;
+    background: url("../img/installation-boards-tablet@1x.webp") no-repeat 0 0 / cover, #30313a;
   }
 
   .offer__item--light {
     padding-top: 50px;
-    background: url("../img/lighting-engineering-tablet@1x.webp") no-repeat  0 0 / cover, #30313a;
+    background: url("../img/lighting-engineering-tablet@1x.webp") no-repeat 0 0 / cover, #30313a;
   }
 
   @media (min-resolution: 2dppx) {
@@ -241,8 +241,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      background: url("../img/icon-arrow.svg") no-repeat center,
-        $main-blue;
+      background: url("../img/icon-arrow.svg") no-repeat center, $main-blue;
     }
 
     &:hover,

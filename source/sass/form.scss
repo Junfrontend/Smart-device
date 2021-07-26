@@ -153,6 +153,7 @@
         position: relative;
         top: 53px;
         left: 59px;
+
         &:hover,
         &:focus {
           &::before {
@@ -161,7 +162,7 @@
         }
       }
 
-      input[type="checkbox"] + label:before {
+      input[type="checkbox"] + label::before {
         content: "";
         display: block;
         width: 16px;
@@ -172,7 +173,7 @@
         left: -32px;
       }
 
-      input[type="checkbox"]:checked + label:before {
+      input[type="checkbox"]:checked + label::before {
         content: "";
         display: block;
         width: 16px;
@@ -194,7 +195,6 @@
         url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
         url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
         $main-blue;
-
 
       fieldset {
         width: 470px;
@@ -340,6 +340,7 @@
         position: relative;
         top: 53px;
         left: 52px;
+
         &:hover,
         &:focus {
           &::before {
@@ -348,7 +349,7 @@
         }
       }
 
-      input[type="checkbox"] + label:before {
+      input[type="checkbox"] + label::before {
         content: "";
         display: block;
         width: 16px;
@@ -359,7 +360,7 @@
         left: -32px;
       }
 
-      input[type="checkbox"]:checked + label:before {
+      input[type="checkbox"]:checked + label::before {
         content: "";
         display: block;
         width: 16px;
@@ -371,7 +372,6 @@
         background: url("../img/icon-check.svg") no-repeat center;
       }
     }
-
   }
 }
 
@@ -442,6 +442,7 @@
         position: relative;
         top: 31px;
         left: 33px;
+
         &:hover,
         &:focus {
           &::before {
@@ -450,7 +451,7 @@
         }
       }
 
-      input[type="checkbox"] + label:before {
+      input[type="checkbox"] + label::before {
         content: "";
         display: block;
         width: 16px;
@@ -461,7 +462,7 @@
         left: -32px;
       }
 
-      input[type="checkbox"]:checked + label:before {
+      input[type="checkbox"]:checked + label::before {
         content: "";
         display: block;
         width: 16px;

@@ -155,34 +155,29 @@
             transform: scale(1.2);
           }
         }
-
-        &::before {
-          content: "";
-          display: block;
-          width: 16px;
-          height: 16px;
-          border: 1px solid #ffffff;
-          box-sizing: border-box;
-          position: absolute;
-          left: -48px;
-          top: 1px;
-        }
       }
-    }
 
-    .modal__checkbox--checked {
-      label {
-        &::before {
-          content: "";
-          display: block;
-          width: 16px;
-          height: 16px;
-          border: 1px solid #ffffff;
-          box-sizing: border-box;
-          position: absolute;
-          left: -48px;
-          background: url("../img/icon-check.svg") no-repeat center;
-        }
+      input[type="checkbox"] + label::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        position: absolute;
+        left: -32px;
+      }
+
+      input[type="checkbox"]:checked + label::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        position: absolute;
+        left: -32px;
+        background: url("../img/icon-check.svg") no-repeat center;
       }
     }
 

@@ -21,10 +21,11 @@
     box-sizing: border-box;
     text-transform: uppercase;
     border-radius: 5px;
+
     &:hover,
-      &:focus {
-        transform: scale(1.2);
-      }
+    &:focus {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -134,7 +135,9 @@
         width: 100%;
       }
 
-      background: url("../img/intro-background-desktop@2x.webp") no-repeat 1038px 140px;
+      background: url("../img/intro-background-desktop@2x.webp") no-repeat 1038px 140px / 705px 515px,
+        url("../img/triangle-with-dots-background.svg") no-repeat 1102px 154px,
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 1051px 352px;
     }
   }
 
@@ -279,9 +282,9 @@
 
   @media (min-resolution: 2dppx) {
     .intro {
-      background: url("../img/intro-background-desktop@2x.webp") no-repeat 510px 3.4% / 465px 340px,
-        url("../img/triangle-with-dots-background.svg") no-repeat 497px 32.4%,
-        url("../img/small-triangle-with-dots-background.svg") no-repeat 457px 52.7%;
+      background: url("../img/intro-background-desktop@2x.webp") no-repeat 510px 18% / 465px 340px,
+        url("../img/triangle-with-dots-background.svg") no-repeat 497px -20px / 440px 440px,
+        url("../img/small-triangle-with-dots-background.svg") no-repeat 457px 148px / 261px 261px;
 
       &::before {
         content: "";
@@ -296,7 +299,6 @@
     }
   }
 }
-
 
 @media (max-width: 767px) {
   .intro {

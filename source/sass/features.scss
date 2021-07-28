@@ -30,7 +30,7 @@
 
   .features__item {
     width: 570px;
-    height: 300px;
+    min-height: 300px;
     border-left: 3px solid $main-blue;
     margin-bottom: 30px;
     padding: 40px 42px 40px 42px;
@@ -180,31 +180,18 @@
 
 @media (max-width: 767px) {
   .features {
-    width: 290px;
+    width: 100%;
     margin-top: 70px;
     position: relative;
     z-index: 1;
     overflow: hidden;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 471px;
-      height: 552px;
-      background: url("../img/triangle-with-dots-background-grey.svg") no-repeat;
-      transform: rotate(-90deg);
-      position: absolute;
-      top: 106px;
-      left: -25px;
-      z-index: -1;
-    }
   }
 
   .features__item {
-    width: 290px;
+    width: 100%;
     min-height: 232px;
     border-left: 2px solid $main-blue;
-    margin-bottom: 20px;
+    margin: 0 15px 20px 15px;
     padding: 23px 12px 22px 25px;
     background-color: #ffffff;
 

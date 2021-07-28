@@ -82,6 +82,7 @@
     &:hover,
     &:focus {
       transform: scale(1.2);
+      cursor: pointer;
     }
   }
 
@@ -111,7 +112,8 @@
 
     &:hover,
     &:focus {
-      transform: scale(1.1);
+      color: #30313a;
+      cursor: pointer;
     }
   }
 
@@ -143,7 +145,7 @@
   .form {
     padding-top: 92px;
     padding-bottom: 113px;
-    background: url("../img/paper-plane@1x.webp") no-repeat 350px 161px,
+    background: url("../img/paper-plane@1x.png") no-repeat 350px 161px,
       url("../img/triangle-with-dots-background.svg") no-repeat 249px 95px,
       url("../img/small-triangle-with-dots-background.svg") no-repeat 197px 292px / 330px 292px,
       $main-blue;
@@ -192,7 +194,7 @@
     .form {
       padding-top: 92px;
       padding-bottom: 113px;
-      background: url("../img/paper-plane@1x.webp") no-repeat 100px 161px / 25% 25%,
+      background: url("../img/paper-plane@1x.png") no-repeat 100px 161px / 25% 25%,
         url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
         url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
         $main-blue;
@@ -207,7 +209,7 @@
       .form {
         padding-top: 92px;
         padding-bottom: 113px;
-        background: url("../img/paper-plane@2x.webp") no-repeat 100px 161px / 25% 25%,
+        background: url("../img/paper-plane@2x.png") no-repeat 100px 161px / 25% 25%,
           url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
           url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 300px 262px,
           $main-blue;
@@ -219,7 +221,7 @@
     .form {
       padding-top: 92px;
       padding-bottom: 113px;
-      background: url("../img/paper-plane@1x.webp") no-repeat 150px 161px / 30% 30%,
+      background: url("../img/paper-plane@1x.png") no-repeat 150px 161px / 30% 30%,
         url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
         url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
         $main-blue;
@@ -229,7 +231,7 @@
       .form {
         padding-top: 92px;
         padding-bottom: 113px;
-        background: url("../img/paper-plane@2x.webp") no-repeat 150px 161px / 30% 30%,
+        background: url("../img/paper-plane@2x.png") no-repeat 150px 161px / 30% 30%,
           url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
           url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
           $main-blue;
@@ -241,7 +243,7 @@
     .form {
       padding-top: 92px;
       padding-bottom: 113px;
-      background: url("../img/paper-plane@1x.webp") no-repeat 250px 161px / 30% 30%,
+      background: url("../img/paper-plane@1x.png") no-repeat 250px 161px / 30% 30%,
         url("../img/triangle-with-dots-background.svg") no-repeat 149px 95px,
         url("../img/small-triangle-with-dots-background.svg") no-repeat 97px 292px / 330px 292px,
         $main-blue;
@@ -251,7 +253,7 @@
       .form {
         padding-top: 92px;
         padding-bottom: 113px;
-        background: url("../img/paper-plane@2x.webp") no-repeat 250px 161px / 30% 30%,
+        background: url("../img/paper-plane@2x.png") no-repeat 250px 161px / 30% 30%,
           url("../img/triangle-with-dots-background.svg") no-repeat 149px 95px,
           url("../img/small-triangle-with-dots-background.svg") no-repeat 97px 292px / 330px 292px,
           $main-blue;
@@ -264,7 +266,7 @@
       .form {
         padding-top: 92px;
         padding-bottom: 113px;
-        background: url("../img/paper-plane@2x.webp") no-repeat 350px 161px / 511px 288px,
+        background: url("../img/paper-plane@2x.png") no-repeat 350px 161px / 511px 288px,
           url("../img/triangle-with-dots-background.svg") no-repeat 249px 95px,
           url("../img/small-triangle-with-dots-background.svg") no-repeat 197px 292px / 330px 292px,
           $main-blue;
@@ -343,7 +345,7 @@
     background: $main-blue;
 
     fieldset {
-      width: 290px;
+      flex-direction: column;
       padding: 0;
       margin: 0 auto;
     }
@@ -360,29 +362,37 @@
     }
 
     input {
-      width: 290px;
+      width: 100%;
       height: 52px;
       margin-top: 25px;
       margin-bottom: 5px;
     }
 
     textarea {
-      width: 290px;
+      width: 100%;
       height: 104px;
       margin-top: 25px;
     }
 
     button {
-      width: 290px;
+      width: 100%;
       height: 47px;
       margin-top: 30px;
     }
 
     .form__checkbox {
+      width: 250px;
+
       label {
         top: 31px;
         left: 33px;
       }
+    }
+  }
+
+  @media (min-width: 350px) and (max-width: 767px) {
+    .form__checkbox {
+      margin: 0 auto;
     }
   }
 }

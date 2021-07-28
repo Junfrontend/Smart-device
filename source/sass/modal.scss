@@ -124,6 +124,7 @@
       &:hover,
       &:focus {
         transform: scale(1.05);
+        cursor: pointer;
       }
     }
 
@@ -152,7 +153,8 @@
         &:hover,
         &:focus {
           &::before {
-            transform: scale(1.2);
+            color: #30313a;
+            cursor: pointer;
           }
         }
       }

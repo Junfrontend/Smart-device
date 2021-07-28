@@ -99,17 +99,17 @@
       <use xlink:href="#logo-small"></use>
     </svg>
     <div class="header__contacts contacts">
-      <a class="contacts__email" href="mailto:info@sd.ru">info@sd.ru</a>
-      <a class="contacts__phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
-      <a href="#" class="contacts__order-call">заказать звонок</a>
+      <a class="contacts__email" href="mailto:info@sd.ru" tabindex="1">info@sd.ru</a>
+      <a class="contacts__phone" href="tel:+74950005252" tabindex="2">+7 (495) 000 52 52</a>
+      <a href="#" class="contacts__order-call" tabindex="3">заказать звонок</a>
     </div>
   </header>
   <main>
     <section class="intro">
       <h1>печатные платы</h1>
       <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a href="#form">получить бесплатную консультацию</a>
-      <div class="intro__scroll-down"><a href="#features">Скролл вниз</a></div>
+      <a href="#form" tabindex="4">получить бесплатную консультацию</a>
+      <div class="intro__scroll-down"><a href="#features" tabindex="5">Скролл вниз</a></div>
     </section>
     <div class="features-and-about-company-background-wrapper">
       <section class="features" id="features">
@@ -171,19 +171,19 @@
             </span>
           </p>
         </div>
-        <a href="#" class="about-company__button">Подробнее</a>
+        <a href="#" class="about-company__button" tabindex="6">Подробнее</a>
       </section>
     </div>
     <section class="offer">
       <h2>Service Device предлагает следующие товары и услуги</h2>
-      <a href="#" class="offer__item offer__item--produce">
+      <a href="#" class="offer__item offer__item--produce" tabindex="7">
         Производство печатных
         плат
       </a>
-      <a href="#" class="offer__item offer__item--installation">
+      <a href="#" class="offer__item offer__item--installation" tabindex="8">
         Монтаж печатных плат
       </a>
-      <a href="#" class="offer__item offer__item--light">
+      <a href="#" class="offer__item offer__item--light" tabindex="9">
         Комплектующие для светотехники
       </a>
     </section>
@@ -192,18 +192,18 @@
         <legend>Остались вопросы? Задайте их нам!</legend>
         <span>Мы проконсультируем Вас бесплатно</span>
         <label>
-          <input type="text" name="nameForm" id="formName" placeholder="Имя" required="" pattern="[A-Za-zА-Яа-я' -]+">
+          <input type="text" tabindex="10" name="nameForm" id="formName" placeholder="Имя" required="" pattern="[A-Za-zА-Яа-я' -]+">
         </label>
         <label>
-          <input type="tel" name="phoneForm" id="formPhone" placeholder="Телефон" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          <input type="tel" tabindex="11" name="phoneForm" id="formPhone" placeholder="Телефон" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         </label>
         <label>
-          <textarea name="questionForm" id="formQuestion" placeholder="Ваш вопрос"></textarea>
+          <textarea tabindex="12" name="questionForm" id="formQuestion" placeholder="Ваш вопрос"></textarea>
         </label>
-        <button type="submit" id="sendForm">Задать вопрос</button>
+        <button type="submit" id="sendForm" tabindex="12">Задать вопрос</button>
         <div class="form__checkbox">
-          <input type="checkbox" name="personalDataForm" id="formCheckbox">
-          <label for="formCheckbox">
+          <input type="checkbox" tabindex="14" name="personalDataForm" id="formCheckbox">
+          <label for="formCheckbox" tabindex="15">
             Я согласен на обработку персональных данных
           </label>
         </div>
@@ -253,7 +253,7 @@
       </nav>
       <div class="main-info__contacts main-info__contacts--no-js">
         <h3>наш офис</h3>
-        <a href="https://goo.gl/maps/eCSfJmipaqkwZU5SA">г. Мытищи, Олимпийский проспект, д.10</a>
+        <p>г. Мытищи, Олимпийский проспект, д.10</p>
         <a href="tel:+74955894050">
           +7 (495) 589-40-50
         </a>
@@ -301,7 +301,7 @@
       </fieldset>
     </form>
   </div>
-  <script src="../main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

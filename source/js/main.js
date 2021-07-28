@@ -8,6 +8,7 @@ var footerNavHeader = footerNav.querySelector('h3');
 var footerContacts = document.querySelector('.main-info__contacts');
 var footerContactsHeader = footerContacts.querySelector('h3');
 var modalName = document.getElementById('modalName');
+var footer = document.querySelector('.footer');
 
 var maskPhone = {
   0: '+',
@@ -160,4 +161,30 @@ phoneInputModal.addEventListener('focus', function (evt) {
 
 phoneInputForm.addEventListener('focus', function (evt) {
   evt.target.value = '+7(';
+});
+
+var footerOnBottom = function () {
+  if (window.innerHeight >= 4066 && window.innerWidth >= 1024) {
+    footer.classList.add('footer--bottom-desktop');
+  }
+  if (window.innerHeight <= 4066 && window.innerWidth >= 1024 && footer.classList.contains('footer--bottom-desktop')) {
+    footer.classList.remove('footer--bottom-desktop');
+  }
+
+  if (window.innerHeight >= 4047 && window.innerWidth >= 768 && window.innerWidth <= 1024) {
+    footer.classList.add('footer--bottom');
+  }
+  if (window.innerHeight <= 4047 && window.innerWidth >= 768 && window.innerWidth <= 1024 && footer.classList.contains('footer--bottom')) {
+    footer.classList.remove('footer--bottom');
+  }
+
+  if (window.innerHeight >= 4830 && window.innerWidth >= 320 && window.innerWidth <= 767) {
+    footer.classList.add('footer--bottom');
+  }
+  if (window.innerHeight <= 4830 && window.innerWidth >= 320 && window.innerWidth <= 767 && footer.classList.contains('footer--bottom')) {
+    footer.classList.remove('footer--bottom');
+  }
+};
+window.addEventListener('resize', function () {
+  footerOnBottom();
 });

@@ -61,7 +61,7 @@
       width: 220px;
       height: 317px;
       transform: rotate(90);
-      background: url("../img/about-company-2005@1x.webp") no-repeat;
+      background: url("../img/about-company-2005@1x.png") no-repeat;
     }
 
     @media (min-resolution: 2dppx) {
@@ -183,8 +183,7 @@
 
 @media (max-width: 767px) {
   .about-company {
-    width: 288px;
-    margin: 0 auto;
+    margin: 0 15px;
     padding-bottom: 65px;
 
     h2 {

@@ -1,9 +1,10 @@
 @media (min-width: 1024px) {
   .contacts {
-    width: 622px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    min-width: 622px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(1, auto);
+    grid-column-gap: 45px;
   }
 
   .contacts__email,
@@ -27,8 +28,6 @@
   }
 
   .contacts__email {
-    margin-right: 72px;
-
     &::before {
       content: "";
       display: block;
@@ -43,6 +42,8 @@
   }
 
   .contacts__phone {
+    margin-left: 75px;
+
     &::before {
       content: "";
       display: block;

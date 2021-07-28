@@ -77,9 +77,10 @@
     padding: 0;
     margin: 0;
     margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -100,7 +101,9 @@
     margin: 0;
   }
 
-  a {
+  a,
+  p {
+    margin: 0;
     font-family: $PT-Mono;
     font-size: 15px;
     line-height: 25px;
@@ -112,6 +115,10 @@
     &:focus {
       color: $main-blue;
     }
+  }
+
+  a {
+    width: 175px;
   }
 }
 
@@ -146,9 +153,10 @@
   }
 
   .main-info__social-icons {
+    margin-top: 42px;
+
     a {
       text-decoration: none;
-      margin-top: 42px;
     }
 
     svg {
@@ -164,7 +172,7 @@
   }
 
   .main-info__nav {
-    margin-right: 150px;
+    margin-left: 160px;
 
     h3 {
       margin-left: 2px;
@@ -194,35 +202,19 @@
     display: none;
   }
 
-  @media (min-width: 1024px) and (max-width: 1101px) {
-    .main-info__nav {
-      margin-right: auto;
-
-      a {
-        margin-right: 20px;
-      }
-    }
-
+  @media (min-width: 1024px) and (max-width: 1290px) {
     .main-info {
-      padding: 65px 25px 55px 25px;
+      padding: 65px 15px 55px 15px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
     }
 
-    .main-info__logo-and-social,
-    .main-info__contacts {
+    .main-info__nav {
       margin-right: 10px;
-    }
-  }
-
-  @media (min-width: 1101px) and (max-width: 1280px) {
-    .main-info {
-      padding: 65px 25px 55px 25px;
-    }
-
-    .main-info__nav {
-      margin-right: 80px;
+      margin-left: 0;
 
       a {
-        margin-right: 20px;
+        margin-right: 10px;
       }
     }
 
@@ -232,13 +224,13 @@
     }
   }
 
-  @media (min-width: 1281px) and (max-width: 1620px) {
+  @media (min-width: 1291px) and (max-width: 1900px) {
     .main-info {
-      padding: 65px 125px 55px 125px;
+      padding: 65px 95px 55px 95px;
     }
 
     .main-info__nav {
-      margin-right: 50px;
+      margin-left: 20px;
 
       a {
         margin-right: 20px;
@@ -305,6 +297,12 @@
 
     h3 {
       margin-left: 3px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
   }
 
@@ -491,7 +489,8 @@
       }
     }
 
-    a {
+    a,
+    p {
       display: none;
     }
 

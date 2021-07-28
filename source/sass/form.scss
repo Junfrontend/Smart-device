@@ -1,4 +1,11 @@
 .form {
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+  }
+
   legend {
     margin: 0;
     padding: 0;
@@ -77,6 +84,59 @@
       transform: scale(1.2);
     }
   }
+
+  label {
+    font-family: $PT-Mono;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+}
+
+.form__checkbox {
+  width: 290px;
+
+  input {
+    width: 16px;
+    height: 16px;
+    display: none;
+  }
+
+  label {
+    display: flex;
+    position: relative;
+    top: 53px;
+    left: 59px;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    position: absolute;
+    left: -32px;
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    position: absolute;
+    left: -32px;
+    background: url("../img/icon-check.svg") no-repeat center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -89,13 +149,9 @@
       $main-blue;
 
     fieldset {
-      border: none;
       width: 570px;
-      display: flex;
-      flex-wrap: wrap;
       padding: 0;
       margin-left: 10px;
-      justify-content: space-between;
       position: relative;
       left: 50%;
     }
@@ -130,61 +186,6 @@
       margin-top: 44px;
       margin-left: 5px;
     }
-
-    label {
-      font-family: $PT-Mono;
-      font-size: 14px;
-      line-height: 16px;
-      color: #ffffff;
-      opacity: 0.8;
-    }
-
-    .form__checkbox {
-      width: 290px;
-
-      input {
-        width: 16px;
-        height: 16px;
-        display: none;
-      }
-
-      label {
-        display: flex;
-        position: relative;
-        top: 53px;
-        left: 59px;
-
-        &:hover,
-        &:focus {
-          &::before {
-            transform: scale(1.2);
-          }
-        }
-      }
-
-      input[type="checkbox"] + label::before {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #ffffff;
-        box-sizing: border-box;
-        position: absolute;
-        left: -32px;
-      }
-
-      input[type="checkbox"]:checked + label::before {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #ffffff;
-        box-sizing: border-box;
-        position: absolute;
-        left: -32px;
-        background: url("../img/icon-check.svg") no-repeat center;
-      }
-    }
   }
 
   @media (min-width: 1024px) and (max-width: 1280px) {
@@ -208,7 +209,7 @@
         padding-bottom: 113px;
         background: url("../img/paper-plane@2x.webp") no-repeat 100px 161px / 25% 25%,
           url("../img/triangle-with-dots-background.svg") no-repeat 100px 95px,
-          url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 330px 292px,
+          url("../img/small-triangle-with-dots-background.svg") no-repeat 60px 292px / 300px 262px,
           $main-blue;
       }
     }
@@ -258,14 +259,16 @@
     }
   }
 
-  @media (min-resolution: 2dppx) {
-    .form {
-      padding-top: 92px;
-      padding-bottom: 113px;
-      background: url("../img/paper-plane@2x.webp") no-repeat 350px 161px / 511px 288px,
-        url("../img/triangle-with-dots-background.svg") no-repeat 249px 95px,
-        url("../img/small-triangle-with-dots-background.svg") no-repeat 197px 292px / 330px 292px,
-        $main-blue;
+  @media (min-width: 1702px) {
+    @media (min-resolution: 2dppx) {
+      .form {
+        padding-top: 92px;
+        padding-bottom: 113px;
+        background: url("../img/paper-plane@2x.webp") no-repeat 350px 161px / 511px 288px,
+          url("../img/triangle-with-dots-background.svg") no-repeat 249px 95px,
+          url("../img/small-triangle-with-dots-background.svg") no-repeat 197px 292px / 330px 292px,
+          $main-blue;
+      }
     }
   }
 }
@@ -278,13 +281,9 @@
     background: $main-blue;
 
     fieldset {
-      border: none;
       width: 597px;
-      display: flex;
-      flex-wrap: wrap;
       padding: 0;
       margin: 0 auto;
-      justify-content: space-between;
     }
 
     legend {
@@ -318,35 +317,10 @@
       margin-left: 6px;
     }
 
-    label {
-      font-family: $PT-Mono;
-      font-size: 14px;
-      line-height: 16px;
-      color: #ffffff;
-      opacity: 0.8;
-    }
-
     .form__checkbox {
-      width: 290px;
-
-      input {
-        width: 16px;
-        height: 16px;
-        display: none;
-      }
-
       label {
-        display: flex;
-        position: relative;
         top: 53px;
         left: 52px;
-
-        &:hover,
-        &:focus {
-          &::before {
-            transform: scale(1.2);
-          }
-        }
       }
 
       input[type="checkbox"] + label::before {
@@ -357,19 +331,7 @@
         border: 1px solid #ffffff;
         box-sizing: border-box;
         position: absolute;
-        left: -32px;
-      }
-
-      input[type="checkbox"]:checked + label::before {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #ffffff;
-        box-sizing: border-box;
-        position: absolute;
-        left: -32px;
-        background: url("../img/icon-check.svg") no-repeat center;
+        left: -34px;
       }
     }
   }
@@ -381,13 +343,9 @@
     background: $main-blue;
 
     fieldset {
-      border: none;
       width: 290px;
-      display: flex;
-      flex-wrap: wrap;
       padding: 0;
       margin: 0 auto;
-      justify-content: space-between;
     }
 
     legend {
@@ -420,58 +378,10 @@
       margin-top: 30px;
     }
 
-    label {
-      font-family: $PT-Mono;
-      font-size: 14px;
-      line-height: 16px;
-      color: #ffffff;
-      opacity: 0.8;
-    }
-
     .form__checkbox {
-      width: 290px;
-
-      input {
-        width: 16px;
-        height: 16px;
-        display: none;
-      }
-
       label {
-        display: flex;
-        position: relative;
         top: 31px;
         left: 33px;
-
-        &:hover,
-        &:focus {
-          &::before {
-            transform: scale(1.2);
-          }
-        }
-      }
-
-      input[type="checkbox"] + label::before {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #ffffff;
-        box-sizing: border-box;
-        position: absolute;
-        left: -32px;
-      }
-
-      input[type="checkbox"]:checked + label::before {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #ffffff;
-        box-sizing: border-box;
-        position: absolute;
-        left: -32px;
-        background: url("../img/icon-check.svg") no-repeat center;
       }
     }
   }

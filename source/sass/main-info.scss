@@ -1,36 +1,142 @@
+.main-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-info__logo-and-social {
+  display: flex;
+  flex-wrap: wrap;
+
+  h2 {
+    font-family: $roboto-bold;
+    color: #203c42;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+  }
+
+  span {
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+    color: #788891;
+  }
+}
+
+.main-info__text-wrapper {
+  margin-right: auto;
+  margin-left: 16px;
+
+  span {
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.85px;
+    color: #788891;
+  }
+}
+
+.main-info__social-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-info__nav {
+  h3 {
+    font-family: $roboto;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    color: #1b2d37;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  a {
+    font-family: $PT-Mono;
+    font-size: 15px;
+    line-height: 25px;
+    color: #1b2d37;
+    opacity: 0.5;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $main-blue;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+
+.main-info__contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  h3 {
+    font-family: $roboto;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    color: #1b2d37;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  a {
+    font-family: $PT-Mono;
+    font-size: 15px;
+    line-height: 25px;
+    color: #1b2d37;
+    opacity: 0.5;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $main-blue;
+    }
+  }
+}
+
+.main-info__company-info span {
+  font-family: $PT-Mono;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1b2d37;
+  opacity: 0.5;
+}
+
 @media (min-width: 1024px) {
   .main-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 65px 255px 57px 252px;
   }
 
   .main-info__logo-and-social {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     width: 220px;
 
     h2 {
-      font-family: $roboto-bold;
       font-size: 25px;
       line-height: 29px;
-      color: #203c42;
-      margin: 0;
-      margin-top: 6px;
-      display: flex;
-      flex-direction: column;
-    }
-
-
-    span {
-      font-family: $roboto;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.3px;
-      color: #788891;
     }
 
     .main-info__logo {
@@ -39,24 +145,7 @@
     }
   }
 
-  .main-info__text-wrapper {
-    margin-right: auto;
-    margin-left: 16px;
-
-    span {
-      font-family: $roboto;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.85px;
-      color: #788891;
-    }
-  }
-
   .main-info__social-icons {
-    display: flex;
-    flex-wrap: wrap;
-
     a {
       text-decoration: none;
       margin-top: 42px;
@@ -64,8 +153,8 @@
 
     svg {
       margin-right: 14px;
-      width: 29px;
-      height: 29px;
+      width: 28px;
+      height: 28px;
 
       &:hover,
       &:focus {
@@ -78,24 +167,10 @@
     margin-right: 150px;
 
     h3 {
-      font-family: $roboto;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 16px;
-      color: #1b2d37;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin: 0;
       margin-left: 2px;
     }
 
     a {
-      font-family: $PT-Mono;
-      font-size: 15px;
-      line-height: 25px;
-      color: #1b2d37;
-      opacity: 0.5;
-      text-decoration: none;
       margin-right: 73px;
 
       &:hover,
@@ -105,46 +180,13 @@
     }
 
     ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      margin-top: 25px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
       height: 100px;
     }
   }
 
   .main-info__contacts {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
     h3 {
-      font-family: $roboto;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 16px;
-      color: #1b2d37;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin: 0;
       margin-bottom: 25px;
-    }
-
-    a {
-      font-family: $PT-Mono;
-      font-size: 15px;
-      line-height: 25px;
-      color: #1b2d37;
-      opacity: 0.5;
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: $main-blue;
-      }
     }
   }
 
@@ -212,9 +254,6 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 19px 23px 35px 25px;
     position: relative;
 
@@ -231,21 +270,12 @@
   }
 
   .main-info__logo-and-social {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 
     h2 {
-      font-family: $roboto-bold;
       font-size: 25px;
       line-height: 29px;
-      color: #203c42;
-      margin: 0;
-      margin-top: 6px;
-      margin-right: auto;
-      display: flex;
-      flex-direction: column;
     }
 
     .main-info__logo {
@@ -254,23 +284,7 @@
     }
   }
 
-  .main-info__text-wrapper {
-    margin-right: auto;
-    margin-left: 16px;
-
-    span {
-      font-family: $roboto;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.85px;
-      color: #788891;
-    }
-  }
-
   .main-info__social-icons {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
 
@@ -287,76 +301,19 @@
   }
 
   .main-info__nav {
-    margin-top: 65px;
+    margin-top: 63px;
 
     h3 {
-      font-family: $roboto;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 16px;
-      color: #1b2d37;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin: 0;
       margin-left: 3px;
-    }
-
-    a {
-      font-family: $PT-Mono;
-      font-size: 15px;
-      line-height: 25px;
-      color: #1b2d37;
-      opacity: 0.5;
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: $main-blue;
-      }
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      margin-top: 25px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
     }
   }
 
   .main-info__contacts {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     margin-right: 11px;
-    margin-top: 65px;
+    margin-top: 63px;
 
     h3 {
-      font-family: $roboto;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 16px;
-      color: #1b2d37;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin: 0;
-      margin-bottom: 24px;
-    }
-
-    a {
-      font-family: $PT-Mono;
-      font-size: 15px;
-      line-height: 25px;
-      color: #1b2d37;
-      opacity: 0.5;
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: $main-blue;
-      }
+      margin-bottom: 25px;
     }
   }
 
@@ -364,53 +321,23 @@
     display: block;
     margin-right: 60px;
     margin-top: 17px;
-
-    span {
-      font-family: $PT-Mono;
-      font-size: 13px;
-      line-height: 24px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      color: #1b2d37;
-      opacity: 0.5;
-    }
   }
 }
 
 @media (max-width: 767px) {
-  .main-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .main-info__logo-and-social {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     margin-bottom: 48px;
     padding: 46px 15px 0 15px;
 
     h2 {
-      font-family: $roboto-bold;
       font-size: 25px;
       line-height: 29px;
-      color: #203c42;
-      margin: 0;
       margin-left: 16px;
-      margin-top: 6px;
-      display: flex;
-      flex-direction: column;
     }
 
     .main-info__text-wrapper span {
-      font-family: $roboto;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 12px;
-      letter-spacing: 0.8px;
-      color: #788891;
       margin-left: 17px;
     }
 
@@ -420,9 +347,11 @@
     }
   }
 
+  .main-info__text-wrapper {
+    margin: 0;
+  }
+
   .main-info__social-icons {
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 112px;
@@ -445,14 +374,6 @@
     border-top: 1px solid rgba(98, 105, 98, 0.2);
 
     h3 {
-      font-family: $roboto;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 16px;
-      color: #1b2d37;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin: 0;
       position: relative;
 
       &::before {
@@ -465,30 +386,6 @@
         right: 2px;
         top: 7px;
       }
-    }
-
-    a {
-      font-family: $PT-Mono;
-      font-size: 15px;
-      line-height: 25px;
-      color: #1b2d37;
-      opacity: 0.5;
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: $main-blue;
-      }
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      margin-top: 25px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
     }
 
     &:hover,
@@ -540,22 +437,11 @@
   }
 
   .main-info__contacts {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     padding: 28px 25px 26px 15px;
     border-top: 1px solid rgba(98, 105, 98, 0.2);
 
     h3 {
-      font-family: $roboto;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 16px;
-      color: #1b2d37;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin: 0;
       margin-bottom: 32px;
       position: relative;
 
@@ -568,20 +454,6 @@
         position: absolute;
         right: -7px;
         top: 6px;
-      }
-    }
-
-    a {
-      font-family: $PT-Mono;
-      font-size: 15px;
-      line-height: 25px;
-      color: #1b2d37;
-      opacity: 0.5;
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: $main-blue;
       }
     }
 
@@ -637,16 +509,6 @@
   .main-info__company-info {
     display: block;
     margin-top: 25px;
-
-    span {
-      font-family: $PT-Mono;
-      font-size: 13px;
-      line-height: 24px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      color: #1b2d37;
-      opacity: 0.5;
-    }
   }
 
   .main-info__nav--no-js,

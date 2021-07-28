@@ -1,10 +1,13 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 @media (min-width: 1024px) {
   .header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     max-width: 1410px;
-    margin: 0 auto;
     padding: 33px;
   }
 
@@ -21,10 +24,6 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
     padding: 20px 25px 0 25px;
   }
 
@@ -35,10 +34,6 @@
 
 @media (max-width: 767px) {
   .header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
     padding: 17px 17px 0 17px;
   }
 

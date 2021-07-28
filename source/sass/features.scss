@@ -1,4 +1,14 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 .features__item {
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+
   h2 {
     font-family: $roboto;
     color: $main-blue;
@@ -14,10 +24,6 @@
 
 @media (min-width: 1024px) {
   .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
     width: 1170px;
     position: relative;
   }
@@ -25,8 +31,6 @@
   .features__item {
     width: 570px;
     height: 300px;
-    box-sizing: border-box;
-    border: 1px solid #ebebeb;
     border-left: 3px solid $main-blue;
     margin-bottom: 30px;
     padding: 40px 42px 40px 42px;
@@ -106,10 +110,6 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
     width: 720px;
     margin-top: 107px;
     position: relative;
@@ -118,8 +118,6 @@
   .features__item {
     width: 345px;
     min-height: 232px;
-    box-sizing: border-box;
-    border: 1px solid #ebebeb;
     border-left: 2px solid $main-blue;
     margin-bottom: 30px;
     padding: 23px 21px 18px 25px;
@@ -182,10 +180,6 @@
 
 @media (max-width: 767px) {
   .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
     width: 290px;
     margin-top: 70px;
     position: relative;
@@ -209,8 +203,6 @@
   .features__item {
     width: 290px;
     min-height: 232px;
-    box-sizing: border-box;
-    border: 1px solid #ebebeb;
     border-left: 2px solid $main-blue;
     margin-bottom: 20px;
     padding: 23px 12px 22px 25px;

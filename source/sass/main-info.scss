@@ -160,10 +160,13 @@
   .main-info__social-icons {
     margin-top: 42px;
     width: 123px;
+    height: 30px;
 
     a {
       text-decoration: none;
+      width: 28px;
       height: 28px;
+      display: block;
     }
 
     svg {
@@ -289,11 +292,13 @@
   }
 
   .main-info__social-icons {
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    width: 123px;
+    height: 30px;
 
     svg {
-      margin-left: 12px;
+      margin-left: 5px;
       width: 29px;
       height: 29px;
 
@@ -396,6 +401,12 @@
         right: 2px;
         top: 7px;
       }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
     }
 
     &:hover,

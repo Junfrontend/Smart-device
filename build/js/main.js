@@ -19,7 +19,7 @@ var maskPhone = {
   13: '-'
 };
 
-var phoneRegExp = /[A-Za-zА-Яа-яЁё.!<>%$?:"'*,~|_№;=]/;
+var phoneRegExp = /[A-Za-zА-Яа-яЁё.!<>%$?:''*,~|_№;=]/;
 
 if (footerNav && footerContacts) {
   footerNav.classList.remove('main-info__nav--no-js');
@@ -35,6 +35,14 @@ orderCallButton.addEventListener(('click'), function (e) {
   modal.classList.add('modal--opened');
   modalName.focus();
   body.classList.add('body--overflow-hidden');
+});
+
+window.addEventListener(('keydown'), function (e) {
+  if (e.key === 'Tab' && modal.classList.contains('modal--opened')) {
+    if (e.target.getAttribute('tabindex') > 5) {
+      modalName.focus();
+    }
+  }
 });
 
 function closeModal() {

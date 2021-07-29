@@ -99,17 +99,17 @@
       <use xlink:href="#logo-small"></use>
     </svg>
     <div class="header__contacts contacts">
-      <a class="contacts__email" href="mailto:info@sd.ru" tabindex="1">info@sd.ru</a>
-      <a class="contacts__phone" href="tel:+74950005252" tabindex="2">+7 (495) 000 52 52</a>
-      <a href="#" class="contacts__order-call" tabindex="3">заказать звонок</a>
+      <a class="contacts__email" href="mailto:info@sd.ru" tabindex="5">info@sd.ru</a>
+      <a class="contacts__phone" href="tel:+74950005252" tabindex="6">+7 (495) 000 52 52</a>
+      <a href="#" class="contacts__order-call" tabindex="7">заказать звонок</a>
     </div>
   </header>
   <main>
     <section class="intro">
       <h1>печатные платы</h1>
       <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a href="#form" tabindex="4">получить бесплатную консультацию</a>
-      <div class="intro__scroll-down"><a href="#features" tabindex="5">Скролл вниз</a></div>
+      <a href="#form" tabindex="8">получить бесплатную консультацию</a>
+      <div class="intro__scroll-down"><a href="#features" tabindex="9">Скролл вниз</a></div>
     </section>
     <div class="features-and-about-company-background-wrapper">
       <section class="features" id="features">
@@ -171,19 +171,19 @@
             </span>
           </p>
         </div>
-        <a href="#" class="about-company__button" tabindex="6">Подробнее</a>
+        <a href="#" class="about-company__button" tabindex="10">Подробнее</a>
       </section>
     </div>
     <section class="offer">
       <h2>Service Device предлагает следующие товары и услуги</h2>
-      <a href="#" class="offer__item offer__item--produce" tabindex="7">
+      <a href="#" class="offer__item offer__item--produce" tabindex="11">
         Производство печатных
         плат
       </a>
-      <a href="#" class="offer__item offer__item--installation" tabindex="8">
+      <a href="#" class="offer__item offer__item--installation" tabindex="12">
         Монтаж печатных плат
       </a>
-      <a href="#" class="offer__item offer__item--light" tabindex="9">
+      <a href="#" class="offer__item offer__item--light" tabindex="13">
         Комплектующие для светотехники
       </a>
     </section>
@@ -192,18 +192,18 @@
         <legend>Остались вопросы? Задайте их нам!</legend>
         <span>Мы проконсультируем Вас бесплатно</span>
         <label>
-          <input type="text" tabindex="10" name="nameForm" id="formName" placeholder="Имя" required="" pattern="[A-Za-zА-Яа-я' -]+">
+          <input type="text" tabindex="14" name="nameForm" id="formName" placeholder="Имя" required="" pattern="[A-Za-zА-Яа-я' -]+">
         </label>
         <label>
-          <input type="tel" tabindex="11" name="phoneForm" id="formPhone" placeholder="Телефон" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          <input type="tel" tabindex="15" name="phoneForm" id="formPhone" placeholder="Телефон" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         </label>
         <label>
-          <textarea tabindex="12" name="questionForm" id="formQuestion" placeholder="Ваш вопрос"></textarea>
+          <textarea tabindex="16" name="questionForm" id="formQuestion" placeholder="Ваш вопрос"></textarea>
         </label>
-        <button type="submit" id="sendForm" tabindex="12">Задать вопрос</button>
+        <button type="submit" id="sendForm" tabindex="17">Задать вопрос</button>
         <div class="form__checkbox">
-          <input type="checkbox" tabindex="14" name="personalDataForm" id="formCheckbox">
-          <label for="formCheckbox" tabindex="15">
+          <input type="checkbox" tabindex="18" name="personalDataForm" id="formCheckbox">
+          <label for="formCheckbox" tabindex="19">
             Я согласен на обработку персональных данных
           </label>
         </div>
@@ -280,18 +280,18 @@
         <legend>Закажите звонок</legend>
         <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
         <label>
-          <input type="text" name="nameModal" placeholder="Имя" id="modalName" pattern="^([a-zA-Z\s\-]|[а-яА-Я\s\-])+$" required="">
+          <input tabindex="1" type="text" name="nameModal" placeholder="Имя" id="modalName" pattern="^([a-zA-Z\s\-]|[а-яА-Я\s\-])+$" required="">
         </label>
         <label>
-          <input type="tel" name="phoneModal" placeholder="Телефон" id="modalPhone" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required="">
+          <input tabindex="2" type="tel" name="phoneModal" placeholder="Телефон" id="modalPhone" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required="">
         </label>
         <label>
-          <textarea name="questionModal" placeholder="Ваш вопрос" id="modalQuestion"></textarea>
+          <textarea tabindex="3" name="questionModal" placeholder="Ваш вопрос" id="modalQuestion"></textarea>
         </label>
-        <button type="submit" id="sendModal">отправить</button>
+        <button type="submit" id="sendModal" tabindex="5">отправить</button>
         <div class="modal__checkbox modal__checkbox--checked">
           <input type="checkbox" required="" name="personalDataModal" id="modalCheckbox">
-          <label for="modalCheckbox">
+          <label for="modalCheckbox" tabindex="4">
             Я согласен на обработку персональных данных
           </label>
         </div>

@@ -159,6 +159,10 @@
         url("../img/triangle-with-dots-background.svg") no-repeat 872px 154px,
         url("../img/small-triangle-with-dots-background.svg") no-repeat 931px 352px;
     }
+
+    .intro__scroll-down {
+      left: 30px;
+    }
   }
 
   @media (min-width: 1024px) and (max-width: 1439px) {
@@ -183,7 +187,7 @@
     }
 
     .intro__scroll-down {
-      left: 150px;
+      left: -60px;
       top: 758px;
     }
   }
@@ -210,7 +214,7 @@
     }
 
     .intro__scroll-down {
-      left: 100px;
+      left: -65px;
     }
   }
 }

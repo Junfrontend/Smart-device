@@ -9,6 +9,7 @@ var footerContacts = document.querySelector('.main-info__contacts');
 var footerContactsHeader = footerContacts.querySelector('h3');
 var modalName = document.getElementById('modalName');
 var footer = document.querySelector('.footer');
+var body = document.querySelector('body');
 
 var maskPhone = {
   0: '+',
@@ -33,11 +34,13 @@ orderCallButton.addEventListener(('click'), function (e) {
   modal.classList.remove('modal--closed');
   modal.classList.add('modal--opened');
   modalName.focus();
+  body.classList.add('body--overflow-hidden');
 });
 
 function closeModal() {
   modal.classList.add('modal--closed');
   modal.classList.remove('modal--opened');
+  body.classList.remove('body--overflow-hidden');
 }
 
 modal.addEventListener(('click'), function (evt) {
@@ -87,6 +90,7 @@ var nameInputModal = document.getElementById('modalName');
 var phoneInputModal = document.getElementById('modalPhone');
 var questionInputModal = document.getElementById('modalQuestion');
 var sendModalButtom = document.getElementById('sendModal');
+var checkboxModal = document.getElementById('modalCheckbox');
 
 if (nameInputModal && phoneInputModal && questionInputModal && sendModalButtom) {
   nameInputModal.addEventListener('input', function () {
@@ -105,7 +109,14 @@ if (nameInputModal && phoneInputModal && questionInputModal && sendModalButtom) 
     }
   });
 
+  if (!checkboxModal.checked) {
+    checkboxModal.setCustomValidity('Поставьте пожалуйста галочку');
+  } else {
+    checkboxModal.setCustomValidity('');
+  }
+
   sendModalButtom.addEventListener('click', function () {
+    checkboxModal.setCustomValidity('');
     localStorage.setItem(nameInputModal.name, nameInputModal.value);
     localStorage.setItem(phoneInputModal.name, phoneInputModal.value);
     localStorage.setItem(questionInputModal.name, questionInputModal.value);
@@ -188,3 +199,8 @@ var footerOnBottom = function () {
 window.addEventListener('resize', function () {
   footerOnBottom();
 });
+
+var headerContacts = document.querySelector('.contacts');
+if (headerContacts.offsetHeight > 60) {
+  headerContacts.childNodes[headerContacts.childNodes.length - 2].classList.add('contacts--correct-last-el');
+}

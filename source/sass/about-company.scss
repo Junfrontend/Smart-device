@@ -13,24 +13,29 @@
     font-family: $PT-Mono;
     color: #666666;
   }
+}
 
-  .about-company__button {
-    box-sizing: border-box;
-    background-color: #ffffff;
-    border: 1px solid $main-blue;
-    color: $main-blue;
-    border-radius: 5px;
-    font-family: $roboto-bold;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block;
-    padding-top: 13px;
-    font-size: 14px;
-    line-height: 16px;
-    width: 180px;
-    height: 45px;
+.about-company__button {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid $main-blue;
+  color: $main-blue;
+  border-radius: 5px;
+  font-family: $roboto-bold;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding-top: 13px;
+  font-size: 14px;
+  line-height: 16px;
+  width: 180px;
+  height: 45px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
   }
 }
 

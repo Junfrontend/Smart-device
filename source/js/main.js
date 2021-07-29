@@ -1,5 +1,5 @@
 'use strict';
-var orderCallButton = document.querySelector('.contacts__order-call');
+var orderCallButton = document.querySelector('.header__order-call');
 var modal = document.querySelector('.modal');
 var form = modal.querySelector('form');
 var modalCloseButton = document.getElementById('close-button');
@@ -65,6 +65,7 @@ var nameInputForm = document.getElementById('formName');
 var phoneInputForm = document.getElementById('formPhone');
 var questionInputForm = document.getElementById('formQuestion');
 var sendFormButtom = document.getElementById('sendForm');
+var checkboxForm = document.getElementById('formCheckbox');
 
 if (nameInputForm && phoneInputForm && questionInputForm && sendFormButtom) {
   nameInputForm.addEventListener('input', function () {
@@ -75,13 +76,17 @@ if (nameInputForm && phoneInputForm && questionInputForm && sendFormButtom) {
     }
   });
 
-  sendFormButtom.addEventListener('click', function (e) {
-    e.preventDefault();
+  if (!checkboxForm.checked) {
+    checkboxForm.setCustomValidity('Поставьте пожалуйста галочку');
+  } else {
+    checkboxForm.setCustomValidity('');
+  }
+
+  sendFormButtom.addEventListener('click', function () {
+    checkboxForm.setCustomValidity('');
     localStorage.setItem(nameInputForm.name, nameInputForm.value);
     localStorage.setItem(phoneInputForm.name, phoneInputForm.value);
     localStorage.setItem(questionInputForm.name, questionInputForm.value);
-    closeModal();
-    form.classList.add('modal__form--sent');
   });
 }
 
@@ -200,7 +205,3 @@ window.addEventListener('resize', function () {
   footerOnBottom();
 });
 
-var headerContacts = document.querySelector('.contacts');
-if (headerContacts.offsetHeight > 60) {
-  headerContacts.childNodes[headerContacts.childNodes.length - 2].classList.add('contacts--correct-last-el');
-}

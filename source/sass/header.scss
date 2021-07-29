@@ -20,6 +20,36 @@
   .header__logo-small {
     display: none;
   }
+
+
+  .header__order-call {
+    width: 180px;
+    height: 45px;
+    padding: 0;
+    padding-top: 15px;
+    margin-right: 1px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px solid #ffffff;
+    background: none;
+    font-family: $roboto-bold;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background: $main-blue;
+      border: 1px solid $main-blue;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -28,6 +58,10 @@
   }
 
   .header__logo-small {
+    display: none;
+  }
+
+  .header__order-call {
     display: none;
   }
 }
@@ -45,5 +79,9 @@
     display: block;
     height: 38px;
     width: 38px;
+  }
+
+  .header__order-call {
+    display: none;
   }
 }

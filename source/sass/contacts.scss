@@ -1,9 +1,11 @@
 @media (min-width: 1024px) {
   .contacts {
-    width: 661px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: 40px;
+    width: 430px;
   }
 
   .contacts__email,
@@ -43,7 +45,6 @@
 
   .contacts__phone {
     display: flex;
-    margin-left: 50px;
 
     &::before {
       content: "";
@@ -53,40 +54,6 @@
       background: url("../img/icon-phone.svg") no-repeat;
       margin-right: 15px;
     }
-  }
-
-  .contacts__order-call {
-    width: 180px;
-    height: 45px;
-    padding: 0;
-    padding-top: 15px;
-    margin-right: 1px;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-left: 10px;
-    border: 1px solid #ffffff;
-    background: none;
-    font-family: $roboto-bold;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border-radius: 5px;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      background: $main-blue;
-      border: 1px solid $main-blue;
-    }
-  }
-
-  .contacts--correct-last-el {
-    margin-right: auto;
-    margin-left: 10px;
   }
 }
 
@@ -130,10 +97,6 @@
       right: 23px;
     }
   }
-
-  .contacts__order-call {
-    display: none;
-  }
 }
 
 
@@ -175,9 +138,5 @@
       top: 22px;
       right: 16px;
     }
-  }
-
-  .contacts__order-call {
-    display: none;
   }
 }

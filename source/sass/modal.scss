@@ -155,10 +155,7 @@
 
         &:hover,
         &:focus {
-          &::before {
-            color: #30313a;
-            cursor: pointer;
-          }
+          color: #30313a;
         }
       }
 

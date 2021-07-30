@@ -150,8 +150,9 @@
         position: relative;
         top: 36px;
         left: 48px;
-        width: 200px;
+        width: 320px;
         cursor: pointer;
+        letter-spacing: 0.3px;
 
         &:hover,
         &:focus {
@@ -167,7 +168,7 @@
         border: 1px solid #ffffff;
         box-sizing: border-box;
         position: absolute;
-        left: -32px;
+        left: -46px;
       }
 
       input[type="checkbox"]:checked + label::before {
@@ -178,23 +179,25 @@
         border: 1px solid #ffffff;
         box-sizing: border-box;
         position: absolute;
-        left: -32px;
+        left: -46px;
         background: url("../img/icon-check.svg") no-repeat center;
       }
     }
 
     .modal__close-button {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       position: absolute;
-      top: 7px;
-      right: 19px;
+      top: 6px;
+      right: 12px;
 
       button {
         border: none;
         background: none;
         width: 24px;
         height: 24px;
+        padding: 0;
+        padding-left: 3px;
 
         &::before,
         &::after {

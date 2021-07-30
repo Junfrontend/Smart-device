@@ -167,17 +167,18 @@
       width: 28px;
       height: 28px;
       display: block;
+      overflow: hidden;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
     }
 
     svg {
       margin-right: 5px;
       width: 28px;
       height: 28px;
-
-      &:hover,
-      &:focus {
-        transform: scale(1.2);
-      }
     }
   }
 
@@ -293,19 +294,26 @@
 
   .main-info__social-icons {
     justify-content: space-between;
-    align-items: center;
-    width: 123px;
+    align-items: flex-end;
+    width: 110px;
     height: 30px;
+    margin-top: 10px;
 
-    svg {
-      margin-left: 5px;
-      width: 29px;
-      height: 29px;
+    a {
+      overflow: hidden;
+      width: 28px;
+      height: 28px;
+      display: block;
 
       &:hover,
       &:focus {
         transform: scale(1.2);
       }
+    }
+
+    svg {
+      width: 28px;
+      height: 28px;
     }
   }
 
@@ -372,14 +380,20 @@
     width: 112px;
     margin-top: 33px;
 
-    svg {
+    a {
       width: 27px;
       height: 27px;
+      overflow: hidden;
 
       &:hover,
       &:focus {
         transform: scale(1.2);
       }
+    }
+
+    svg {
+      width: 27px;
+      height: 27px;
     }
   }
 

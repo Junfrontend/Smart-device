@@ -194,6 +194,13 @@
     }
   }
 
+  .form__checkbox {
+    input {
+      top: 295px;
+      left: 305px;
+    }
+  }
+
   @media (min-width: 1024px) and (max-width: 1280px) {
     .form {
       padding-top: 92px;
@@ -324,6 +331,17 @@
     }
 
     .form__checkbox {
+      position: relative;
+
+      input {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 15px;
+        top: 1px;
+        opacity: 0;
+      }
+
       label {
         top: 53px;
         left: 52px;
@@ -382,10 +400,25 @@
       width: 100%;
       height: 47px;
       margin-top: 30px;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
     }
 
     .form__checkbox {
       width: 250px;
+      position: relative;
+
+      input {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: -4px;
+        top: 6px;
+        opacity: 0;
+      }
 
       label {
         top: 31px;

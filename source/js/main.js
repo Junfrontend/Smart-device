@@ -40,6 +40,7 @@ orderCallButton.addEventListener(('click'), function (e) {
 window.addEventListener(('keydown'), function (e) {
   if (e.key === 'Tab' && modal.classList.contains('modal--opened')) {
     if (e.target.getAttribute('tabindex') > 5) {
+      e.preventDefault();
       modalName.focus();
     }
   }
@@ -212,4 +213,3 @@ var footerOnBottom = function () {
 window.addEventListener('resize', function () {
   footerOnBottom();
 });
-
